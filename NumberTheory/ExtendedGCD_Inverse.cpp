@@ -22,20 +22,25 @@ long long extgcd(long long a, long long b, long long &x, long long &y) {
 	return g;
 }
 
-//逆元
-//xy%m=1, y<m となるyを求める
+// 逆元
+// xy mod m = 1 かつ y < m となる y を求める
+// m は素数とする
 long long modinv(long long x, long long m) {
-	long long s, t;
-	extgcd(x, m, s, t);
-	return (s + m) % m;
+	long long y, n;
+	extgcd(x, m, y, n);
+	return (y + m) % m;
 }
 
 int main() {
 	long long a = 240, b = 46, c = 4;
 	long long x, y;
 	long long g = extgcd(a, b, x, y);
-	cout << "gcd(a, b) = " << g << endl;
+	dump(g);
 	long long k = c / g;
-	cout << "x = " << k * x << ", y = " << k * y << endl;
+	x *= k, y *= k;
+	dump(x, y);
+
+	dump(modinv(5, 7));
+
 	return 0;
 }
