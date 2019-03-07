@@ -1,5 +1,7 @@
 # algorithms
 algorithms and data structures
 
-## dump.hpp
+## Debug
 `Debug/dump.hpp` 
+
+`Debug/template.hpp` 
