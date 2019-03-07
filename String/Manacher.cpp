@@ -1,3 +1,10 @@
+//
+// Manacher's algorithm
+// 
+// 最長回文を求める
+// O(N)
+// 
+
 #include "bits/stdc++.h"
 using namespace std;
 #ifdef _DEBUG
@@ -9,11 +16,8 @@ using namespace std;
 const int INF = 0x3f3f3f3f;
 const int MOD = 1'000'000'007;
 
-// Manacher's algorithm
 // 奇数長の最長回文を求める
-// O(N)
 // 戻り値: r[i]: s[i]を中心とする最長の回文の半径 := (全長 + 1) / 2
-// 偶数長の回文を求めたい場合はダミー文字を入れる
 vector<int> manacher(const string &s) {
 	int n = s.size();
 	vector<int> r(n);
@@ -39,7 +43,8 @@ string insertDummyChar(const string &s, char dummy = '$') {
 }
 
 // 偶数長の最長回文を求める
-// ret[i] := s[i] と s[i+1] の間を中心とする最長の回文の半径 := 全長 / 2
+// ダミー文字を入れて奇数長の最長回文を求めてそれを使う
+// ret[i]: s[i] と s[i+1] の間を中心とする最長の回文の半径 := 全長 / 2
 vector<int> manacherEven(const string &s) {
 	int n = s.size();
 	vector<int> ret(n - 1);
