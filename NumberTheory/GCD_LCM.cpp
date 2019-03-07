@@ -1,46 +1,19 @@
-#include "bits/stdc++.h"
-using namespace std;
-#ifdef _DEBUG
-#include "dump.hpp"
-#else
-#define dump(...)
-#endif
+//
+// æœ€å¤§å…¬ç´„æ•°ï¼ˆgreatest common divisorï¼‰
+// æœ€å°å…¬å€æ•°ï¼ˆleast common multipleï¼‰
+//
 
-const int INF = 0x3f3f3f3f;
-const int MOD = 1'000'000'007;
-
-// Šg’£ƒ†[ƒNƒŠƒbƒh‚ÌŒİœ–@
-// ˆêŸ•s’è•û’ö® ax + by = gcd(a, b) ‚ğ–‚½‚· x, y ‚ğ‹‚ß‚é
-// ax + by = k * gcd(a, b) ‚ÍA‚Ü‚¸ ax + by = gcd(a, b) ‚ğ‰ğ‚«A‰ğ‚ğ k ”{‚·‚é
-// –ß‚è’l: gcd(a, b)
-long long extgcd(long long a, long long b, long long &x, long long &y) {
-	long long g = a; x = 1; y = 0;
-	if (b != 0) {
-		g = extgcd(b, a % b, y, x);
-		y -= (a / b) * x;
-	}
-	return g;
+int gcd(int x, int y) { return y ? gcd(y, x % y) : x; }
+int lcm(int x, int y) { return x / gcd(x, y) * y; }
+int gcd(const vector<int> &v) {
+	int ret = v[0];
+	for (int i = 1; i < v.size(); i++)
+		ret = gcd(ret, v[i]);
+	return ret;
 }
-
-// ‹tŒ³
-// xy mod m = 1 ‚©‚Â y < m ‚Æ‚È‚é y ‚ğ‹‚ß‚é
-// m ‚Í‘f”‚Æ‚·‚é
-long long modinv(long long x, long long m) {
-	long long y, n;
-	extgcd(x, m, y, n);
-	return (y + m) % m;
-}
-
-int main() {
-	long long a = 240, b = 46, c = 4;
-	long long x, y;
-	long long g = extgcd(a, b, x, y);
-	dump(g);
-	long long k = c / g;
-	x *= k, y *= k;
-	dump(x, y);
-
-	dump(modinv(5, 7));
-
-	return 0;
+int lcm(const vector<int> &v) {
+	int ret = v[0];
+	for (int i = 1; i < v.size(); i++)
+		ret = lcm(ret, v[i]);
+	return ret;
 }

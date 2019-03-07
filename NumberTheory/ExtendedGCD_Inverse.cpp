@@ -9,10 +9,10 @@ using namespace std;
 const int INF = 0x3f3f3f3f;
 const int MOD = 1'000'000'007;
 
-// Šg’£ƒ†[ƒNƒŠƒbƒh‚ÌŒÝœ–@
-// ˆêŽŸ•s’è•û’öŽ® ax + by = gcd(a, b) ‚ð–ž‚½‚· x, y ‚ð‹‚ß‚é
-// ax + by = k * gcd(a, b) ‚ÍA‚Ü‚¸ ax + by = gcd(a, b) ‚ð‰ð‚«A‰ð‚ð k ”{‚·‚é
-// –ß‚è’l: gcd(a, b)
+// æ‹¡å¼µãƒ¦ãƒ¼ã‚¯ãƒªãƒƒãƒ‰ã®äº’é™¤æ³•
+// ä¸€æ¬¡ä¸å®šæ–¹ç¨‹å¼ ax + by = gcd(a, b) ã‚’æº€ãŸã™ x, y ã‚’æ±‚ã‚ã‚‹
+// ax + by = k * gcd(a, b) ã¯ã€ã¾ãš ax + by = gcd(a, b) ã‚’è§£ãã€è§£ã‚’ k å€ã™ã‚‹
+// æˆ»ã‚Šå€¤: gcd(a, b)
 long long extgcd(long long a, long long b, long long &x, long long &y) {
 	long long g = a; x = 1; y = 0;
 	if (b != 0) {
@@ -22,8 +22,8 @@ long long extgcd(long long a, long long b, long long &x, long long &y) {
 	return g;
 }
 
-//‹tŒ³
-//xy%m=1, y<m ‚Æ‚È‚éy‚ð‹‚ß‚é
+//é€†å…ƒ
+//xy%m=1, y<m ã¨ãªã‚‹yã‚’æ±‚ã‚ã‚‹
 long long modinv(long long x, long long m) {
 	long long s, t;
 	extgcd(x, m, s, t);

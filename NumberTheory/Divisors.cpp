@@ -1,4 +1,4 @@
-// –ñ” –¢ƒ\[ƒg
+// ç´„æ•° æœªã‚½ãƒ¼ãƒˆ
 vector<int> getDivisors(int x) {
 	vector<int> ret;
 	int i;

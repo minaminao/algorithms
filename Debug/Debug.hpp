@@ -1,5 +1,5 @@
-// �f�o�b�O�o�͂��������Ƃ��ɓǂݍ���
-// �I�u�W�F�N�g�����o�͂������Ȃ��ꍇ�͑f����cerr����
+// デバッグ出力をしたいときに読み込む
+// オブジェクト名を出力したくない場合は素直にcerrする
 
 using namespace std;
 #define dump(...) { cerr << #__VA_ARGS__ << ": "; _dump(__VA_ARGS__); cerr << endl; }

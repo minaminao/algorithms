@@ -7,7 +7,7 @@ double modulo(double x, double mod) {
 	return x;
 }
 
-// Å¬”ñ•‰è—](c/c++‚Íâ‘Î’lÅ¬è—])
+// æœ€å°éè² å‰°ä½™(c/c++ã¯çµ¶å¯¾å€¤æœ€å°å‰°ä½™)
 int modulo(int x, int mod) {
 	return (x%mod < 0) ? x % mod + abs(mod) : x % mod;
 }
@@ -23,7 +23,7 @@ long long modmul(long long a, long long b, long long mod) {
 	return x % mod;
 }
 
-// ƒI[ƒo[ƒtƒ[‚·‚é‰Â”\«‚ª‚ ‚ê‚ÎŠ|‚¯Z‚Émodmul()‚ğg‚¤
+// ã‚ªãƒ¼ãƒãƒ¼ãƒ•ãƒ­ãƒ¼ã™ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Œã°æ›ã‘ç®—ã«modmul()ã‚’ä½¿ã†
 long long modpow(long long a, long long exponent, long long mod) {
 	long long res = 1;
 	while (exponent > 0) {
@@ -34,10 +34,10 @@ long long modpow(long long a, long long exponent, long long mod) {
 	return res;
 }
 
-// —İæ, power
-// ‚‘¬—İæ ŒJ‚è•Ô‚µ©æ–@
-// power((Int)a, k) ‚Ì‚æ‚¤‚Ég‚¤‚±‚Æ
-// pow ‚¾‚Æ pow(int,int) ‚ªÕ“Ë‚·‚é
+// ç´¯ä¹—, power
+// é«˜é€Ÿç´¯ä¹— ç¹°ã‚Šè¿”ã—è‡ªä¹—æ³•
+// power((Int)a, k) ã®ã‚ˆã†ã«ä½¿ã†ã“ã¨
+// pow ã ã¨ pow(int,int) ãŒè¡çªã™ã‚‹
 template<typename Int>
 Int power(Int a, unsigned long long k) {
 	Int r = 1;
@@ -49,7 +49,7 @@ Int power(Int a, unsigned long long k) {
 	return r;
 }
 
-// ŠKæ, factorial
+// éšä¹—, factorial
 int factorial(int n) {
 	int fact = 1;
 	for (int i = 1; i <= n; i++)
@@ -57,7 +57,7 @@ int factorial(int n) {
 	return fact;
 }
 
-// ‘f””»’èiMiller-Rabin primality testj2^24’ö“x‚©‚ç
+// ç´ æ•°åˆ¤å®šï¼ˆMiller-Rabin primality testï¼‰2^24ç¨‹åº¦ã‹ã‚‰
 // millerRabinPrimalityTest(n, 5)
 bool millerRabinPrimalityTest(long long x, int iteration) {
 	if (x < 2)return false;
@@ -76,7 +76,7 @@ bool millerRabinPrimalityTest(long long x, int iteration) {
 	return true;
 }
 
-//‘f””»’è
+//ç´ æ•°åˆ¤å®š
 bool isPrime(int x) {
 	if (x <= 1)return false;
 	else if (x == 2)return true;
@@ -86,7 +86,7 @@ bool isPrime(int x) {
 	return true;
 }
 
-// ƒGƒ‰ƒgƒXƒeƒlƒX‚Ìâ¿
+// ã‚¨ãƒ©ãƒˆã‚¹ãƒ†ãƒã‚¹ã®ç¯©
 vector<char> eratos(int n) {
 	vector<char> is_prime(n + 1, true);
 	is_prime[0] = is_prime[1] = false;
@@ -100,7 +100,7 @@ vector<char> eratos(int n) {
 		}
 	return is_prime;
 }
-// nˆÈ‰º‚Ì‘f”
+// nä»¥ä¸‹ã®ç´ æ•°
 vector<int> getPrimes(int n) {
 	vector<char> is_prime = eratos(n);
 	vector<int> primes;
@@ -109,8 +109,8 @@ vector<int> getPrimes(int n) {
 			primes.emplace_back(i);
 	return primes;
 }
-// ‘fˆö”•ª‰ğ ¸‡
-// ãxˆÈ‰º‚Ì‘f”‚É‘Î‚µ‚ÄŠ„‚èØ‚ê‚é‚©’²‚×‚é
+// ç´ å› æ•°åˆ†è§£ æ˜‡é †
+// âˆšxä»¥ä¸‹ã®ç´ æ•°ã«å¯¾ã—ã¦å‰²ã‚Šåˆ‡ã‚Œã‚‹ã‹èª¿ã¹ã‚‹
 vector<int> primeFactorization(int x) {
 	vector<int> primes = getPrimes(sqrt(x));
 	vector<int> factors;
@@ -125,8 +125,8 @@ vector<int> primeFactorization(int x) {
 }
 
 
-//ƒIƒCƒ‰[‚ÌƒÓŠÖ”iEuler's totient functionj
-//n‚ÆŒİ‚¢‚É‘f‚È”[1,n]‚ÌŒÂ”
+//ã‚ªã‚¤ãƒ©ãƒ¼ã®Ï†é–¢æ•°ï¼ˆEuler's totient functionï¼‰
+//nã¨äº’ã„ã«ç´ ãªæ•°[1,n]ã®å€‹æ•°
 //http://mathtrain.jp/phi
 int eulerTotient(int n) {
 	int ret = n;
@@ -141,7 +141,7 @@ int eulerTotient(int n) {
 	return ret;
 }
 
-// ƒtƒBƒ{ƒiƒbƒ`”—ñ
+// ãƒ•ã‚£ãƒœãƒŠãƒƒãƒæ•°åˆ—
 auto fibonacci = [&](int n) {
 	vector<int> v(n);
 	v[0] = v[1] = 1;
@@ -158,13 +158,13 @@ vector<int> powerArray(int p, int n) {
 	return power;
 }
 
-// ×‚©‚È’è—E—\‘z
+// ç´°ã‹ãªå®šç†ãƒ»äºˆæƒ³
 
-// ƒRƒ‰ƒbƒc‚Ì—\‘z
+// ã‚³ãƒ©ãƒƒãƒ„ã®äºˆæƒ³
 // https://en.wikipedia.org/wiki/Collatz_conjecture
 // n/2  if n = 0 (mod 2)
 // 3n+1 if n = 1 (mod 2)
-// n <= 10^6 ‚¾‚ÆÅ‘å collatzConjecture(837799) = 524 ‚¾‚©‚ç‘S’Tõ‚µ‚Ä‚àŒ‹\‘¬‚­I‚í‚é
+// n <= 10^6 ã ã¨æœ€å¤§ collatzConjecture(837799) = 524 ã ã‹ã‚‰å…¨æ¢ç´¢ã—ã¦ã‚‚çµæ§‹é€Ÿãçµ‚ã‚ã‚‹
 int collatzConjecture(int n) {
 	if (n == 1)
 		return 0;

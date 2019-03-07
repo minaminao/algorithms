@@ -1,4 +1,4 @@
-//‘fW‡ƒf[ƒ^\‘¢
+//ç´ é›†åˆãƒ‡ãƒ¼ã‚¿æ§‹é€ 
 struct UnionFind {
 	vector<int> parent;
 	int size;
@@ -15,7 +15,7 @@ struct UnionFind {
 	int sizeOf(int x) { return -parent[root(x)]; }
 };
 
-//‘fW‡ƒf[ƒ^\‘¢ + W‡“à‚ÌÅ¬’l‚ğ‹‚ß‚é‹@”\
+//ç´ é›†åˆãƒ‡ãƒ¼ã‚¿æ§‹é€  + é›†åˆå†…ã®æœ€å°å€¤ã‚’æ±‚ã‚ã‚‹æ©Ÿèƒ½
 struct UnionFind_ {
 	vector<int> parent;
 	vector<int> mini;
@@ -35,7 +35,7 @@ struct UnionFind_ {
 	int minOf(int x) { return mini[root(x)]; }
 };
 
-//˜AŒ‹¬•ª‚ÉƒCƒ“ƒfƒbƒNƒX‚ğŠ„‚è“–‚Ä‚é
+//é€£çµæˆåˆ†ã«ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’å‰²ã‚Šå½“ã¦ã‚‹
 struct UnionFind_ {
 	vector<int> parent;
 	vector<int> idx;
@@ -57,8 +57,8 @@ struct UnionFind_ {
 	int getIdx(int x) { return idx[root(x)]; }
 };
 
-//–³ŒüƒOƒ‰ƒt‚Ì•Â˜H‚ÌŒŸo
-//ª‚ğ˜AŒ‹¬•ª‚Ì id ‚Æ‚µ‚ÄŒ©‚é‚Æ“s‡‚ª‚¢‚¢
+//ç„¡å‘ã‚°ãƒ©ãƒ•ã®é–‰è·¯ã®æ¤œå‡º
+//æ ¹ã‚’é€£çµæˆåˆ†ã® id ã¨ã—ã¦è¦‹ã‚‹ã¨éƒ½åˆãŒã„ã„
 struct UnionFind {
 	vector<int> parent;
 	vector<bool> cycle;
