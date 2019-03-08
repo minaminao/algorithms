@@ -1,2 +1,6 @@
 .vs
+
 *.out
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
