@@ -1,6 +1,4 @@
-# Algorithms and Data Structures
-
-
+# Algorithms and Data Structures in C++ or Python
 
 ## Data Structures / データ構造
 - [Union–Find](https://github.com/minaminao/algorithms/blob/master/DataStructures/UnionFind.cpp)
@@ -16,6 +14,7 @@
 - [Number Theory](https://github.com/minaminao/algorithms/blob/master/NumberTheory/NumberTheory.cpp)
 
 ## Quantum / 量子アルゴリズム
+
 - [Adder](https://github.com/minaminao/algorithms/blob/master/Quantum/Adder.ipynb)
 - [Bell State](https://github.com/minaminao/algorithms/blob/master/Quantum/BellState.ipynb)
 - [Bernstein–Vazirani Algorithm](https://github.com/minaminao/algorithms/blob/master/Quantum/BernsteinVazirani.ipynb)
@@ -26,6 +25,9 @@
 - [Oracle](https://github.com/minaminao/algorithms/blob/master/Quantum/Oracle.ipynb)
 - [Plus State, Minus State](https://github.com/minaminao/algorithms/blob/master/Quantum/PlusState_MinusState.ipynb)
 - [n-CNOT](https://github.com/minaminao/algorithms/blob/master/Quantum/n-CNOT.ipynb)
+
+### "Sorry, something went wrong. Reload?"
+と表示される場合は、[nbviewer](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/Quantum/) を使う。
 
 ## String / 文字列
 - [Distance](https://github.com/minaminao/algorithms/blob/master/String/Distance.cpp)
