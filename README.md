@@ -1,6 +1,7 @@
 # Algorithms and Data Structures
 
 ## Cryptography / 暗号理論
+- [ElGamal](Cryptography/ElGamal.ipynb)
 - [RSA](Cryptography/RSA.ipynb)
 
 ## Data Structures / データ構造
