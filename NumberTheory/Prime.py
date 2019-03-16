@@ -1,3 +1,6 @@
+import random
+
+
 def gen_prime(n):
     x = random.randint(pow(2, n), pow(2, n + 1))
     if x % 2 == 0:
