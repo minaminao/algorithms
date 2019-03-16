@@ -63,7 +63,9 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Z Algorithm](String/ZAlgorithm.cpp)
 
 ## Others / その他
+- [Binary Search](Others/BinarySearch.py)
 - [Gray Code](Others/GrayCode.py)
+- [Number To String](Others/NumberToString.py)
 - [Sliding Windows](Others/SlidingWindows.cpp)
 
 ## Debug / デバッグ用
