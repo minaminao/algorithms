@@ -60,6 +60,7 @@ GitHub 上で Jupyter Notebook のファイルが
 ## String / 文字列
 - [Distance](String/Distance.cpp)
 - [Manacher's Algorithm](String/Manacher.cpp)
+- [Rolling Hash](String/RollingHash.cpp)
 - [Suffix Array](String/SuffixArray.cpp)
 - [Z Algorithm](String/ZAlgorithm.cpp)
 
