@@ -35,6 +35,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Topological Sort](GraphTheory/TopologicalSort.cpp)
 
 ## Number Theory / 数論
+- [Chinese Remainder Theorem](NumberTheory/ChineseRemainderTheorem.py)
 - [Divisors](NumberTheory/Divisors.cpp)
 - [Extended Euclidean Algorithm, Inverse Element](NumberTheory/ExtendedGCD_Inverse.cpp)
 - [GCD, LCM](NumberTheory/ExtendedGCD_Inverse.cpp)
@@ -67,6 +68,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Gray Code](Others/GrayCode.py)
 - [Number To String](Others/NumberToString.py)
 - [Sliding Windows](Others/SlidingWindows.cpp)
+- [String To Number](Others/StringToNumber.py)
 
 ## Debug / デバッグ用
 デバッグ用のコードとテンプレート

@@ -10,6 +10,14 @@ def gen_prime(n):
     return x
 
 
+def next_prime(x):
+    if x % 2 == 0:
+        x += 1
+    while miller_rabin_primality_test(x, 10) == False:
+        x += 2
+    return x
+
+
 def miller_rabin_primality_test(x, iteration):
     if x < 2:
         return False

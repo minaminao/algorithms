@@ -6,8 +6,3 @@ def extgcd(a, b):
         g, y, x = extgcd(b, a % b)
         y -= (a // b) * x
     return (g, x, y)
-
-
-def modinv(x, m):
-    g, y, n = extgcd(x, m)
-    return (y + m) % m
