@@ -1,7 +1,19 @@
+#include "bits/stdc++.h"
+using namespace std;
+#ifdef _DEBUG
+#include "dump.hpp"
+#else
+#define dump(...)
+#endif
+
+const int INF = 0x3f3f3f3f;
+const int MOD = 1'000'000'007;
+
 // ガウスの消去法（Gauss elimination）
 // O(n^3)
 //
 // 戻り値: (解が存在するか, rank, 解)
+//   解が複数ある場合は適当な解を出力する
 //
 // Verified:
 //   http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=3437138
@@ -23,7 +35,7 @@ tuple<bool, int, Vec> gaussianElimination(Mat A, Vec b) {
 				swap(b[i], b[rank]);
 			}
 		}
-		if (abs(A[rank][cj]) > 0) {
+		if (abs(A[rank][cj]) > EPS) {
 			// 係数を 1 に
 			Num d = A[rank][cj];
 			for (int j = 0; j < m; j++)
@@ -47,11 +59,45 @@ tuple<bool, int, Vec> gaussianElimination(Mat A, Vec b) {
 	// 不定
 	// rank != m
 	// cj < m => n < m
-	if (rank < m || cj < m)
-		return make_tuple(true, rank, Vec());
+	// 適当な解を構築する
+	if (rank < m || cj < m) {
+		int ci = rank;
+		for (int i = 0; i < min(n, m); i++) {
+			if (abs(A[i][i]) <= EPS) {
+				if (i != ci) {
+					A[i].swap(A[ci]);
+					swap(b[i], b[ci]);
+				}
+				ci++;
+				for (int j = 0; j < m; j++)
+					A[i][j] = 0;
+				A[i][i] = 1;
+				b[i] = 0; // 任意の値で良い
+			}
+		}
+	}
 	// 後退代入（back substitution）
 	for (int j = m - 1; j >= 0; j--)
 		for (int i = 0; i < j; i++)
 			b[i] -= b[j] * A[i][j];
 	return make_tuple(true, rank, b);
+}
+
+int main() {
+	Mat A; Vec b;
+
+	A = { { 1,3,1 },{ 1,1,-1 },{ 3,11,5 } };
+	b = { 9,1,35 };
+	dump(gaussianElimination(A, b));
+	A = { { 1,0,1 },{ 0,0,1 },{ 0,0,0 } };
+	b = { { 1,3,0 } };
+	dump(gaussianElimination(A, b));
+	A = { { 0,0,1 },{ 1,0,1 },{ 0,0,0 } };
+	b = { { 3,1,0 } };
+	dump(gaussianElimination(A, b));
+	A = { { 0,1,0 },{ 0,0,1 },{ 0,0,0 },{ 1,0,0 } };
+	b = { { 2,3,0,1 } };
+	dump(gaussianElimination(A, b));
+
+	return 0;
 }
