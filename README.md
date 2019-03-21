@@ -58,9 +58,10 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Deutsch–Jozsa Algorithm](Quantum/DeutschJozsa.ipynb)
 - [Entanglement](Quantum/Entanglement.ipynb)
 - [GHZ State](Quantum/GHZState.ipynb)
+- [n-CNOT](Quantum/n-CNOT.ipynb)
 - [Oracle](Quantum/Oracle.ipynb)
 - [Plus State, Minus State](Quantum/PlusState_MinusState.ipynb)
-- [n-CNOT](Quantum/n-CNOT.ipynb)
+- [Simon's Algorithm](Quantum/Simon.ipynb)
 
 ## String / 文字列
 - [Distance](String/Distance.cpp)
