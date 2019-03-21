@@ -6,7 +6,7 @@ GitHub 上で Jupyter Notebook のファイルが
 
 > Sorry, something went wrong. Reload?
 
-となる場合は、[nbviewer](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/) で見る。
+となる場合は、[nbviewer](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/) で見れる。
 
 ## Cryptography / 暗号理論
 - [ElGamal](Cryptography/ElGamal.ipynb)
