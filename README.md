@@ -1,5 +1,7 @@
 # Algorithms and Data Structures
 
+C++ あるいは Python によるアルゴリズムとデータ構造の実装・説明・スニペット。
+
 GitHub 上で Jupyter Notebook のファイルが
 
 > Sorry, something went wrong. Reload?
@@ -33,6 +35,9 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Graph](GraphTheory/Graph.cpp)
 - [Spanning Tree](GraphTheory/SpanningTree.cpp)
 - [Topological Sort](GraphTheory/TopologicalSort.cpp)
+
+## Linear Algebra / 線形代数学
+- [Gauss Elimination](LinearAlgebra/GaussElimination.cpp)
 
 ## Number Theory / 数論
 - [Chinese Remainder Theorem](NumberTheory/ChineseRemainderTheorem.py)
