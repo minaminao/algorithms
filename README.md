@@ -18,6 +18,9 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Treap](Treap.cpp)
 - [Union–Find](DataStructures/UnionFind.cpp)
 
+## Geometry / 幾何学
+- [Minimum-Weight Triangulation](Geometry/MinimumWeightTriangulation.cpp)
+
 ## Graph Theory / グラフ理論
 - [Matching](GraphTheory/Matching)
   - [Bipartite Matching](GraphTheory/Matching/BipartiteMatching.cpp)
@@ -63,7 +66,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Plus State, Minus State](Quantum/PlusState_MinusState.ipynb)
 - [Simon's Algorithm](Quantum/Simon.ipynb)
 
-## String / 文字列
+## String / 文字列アルゴリズム
 - [Distance](String/Distance.cpp)
 - [Manacher's Algorithm](String/Manacher.cpp)
 - [Rolling Hash](String/RollingHash.cpp)
