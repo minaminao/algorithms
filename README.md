@@ -1,6 +1,6 @@
 # Algorithms and Data Structures
 
-C++ あるいは Python によるアルゴリズムとデータ構造の実装・説明・スニペット。
+C++, Python などによるアルゴリズムとデータ構造の実装・説明・スニペット。
 
 GitHub 上で Jupyter Notebook のファイルが
 
@@ -35,6 +35,11 @@ GitHub 上で Jupyter Notebook のファイルが
   - [Build DAG](GraphTheory/ShortestPath/BuilldDAG.cpp)
   - [Dijkstra's Algorithm](GraphTheory/ShortestPath/Dijkstra.cpp)
   - [Get Path](GraphTheory/ShortestPath/GetPath.cpp)
+- [BFS](GraphTheory/BFS.cpp)
+- [Bipartite Graph](GraphTheory/BipartiteGraph.cpp)
+- [Cycle Detection](GraphTheory/CycleDetection.cpp)
+- [DFS](GraphTheory/DFS.cpp)
+- [Eulerian Path](GraphTheory/EulerianPath.cpp)
 - [Graph](GraphTheory/Graph.cpp)
 - [Spanning Tree](GraphTheory/SpanningTree.cpp)
 - [Topological Sort](GraphTheory/TopologicalSort.cpp)
@@ -53,7 +58,6 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Prime](NumberTheory/Prime.cpp)
 
 ## Quantum / 量子アルゴリズム
-
 - [Adder](Quantum/Adder.ipynb)
 - [Bell State](Quantum/BellState.ipynb)
 - [Bernstein–Vazirani Algorithm](Quantum/BernsteinVazirani.ipynb)
