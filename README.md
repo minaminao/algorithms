@@ -14,8 +14,8 @@ GitHub 上で Jupyter Notebook のファイルが
 
 ## Data Structures / データ構造
 - [Binary Indexed Tree](DataStructures/BinaryIndexedTree.cpp)
-- [k-d Tree](KdTree.cpp)
-- [Treap](Treap.cpp)
+- [k-d Tree](DataStructures/KdTree.cpp)
+- [Treap](DataStructures/Treap.cpp)
 - [Union–Find](DataStructures/UnionFind.cpp)
 
 ## Geometry / 幾何学

@@ -1,5 +1,6 @@
 // 素数判定
-// O(√n)
+// bit数が固定なら O(√n)
+// 多倍長整数を許すなら b = lg n として O(2^(b/2))
 bool isPrime(int x) {
 	if (x <= 1)return false;
 	else if (x == 2)return true;
