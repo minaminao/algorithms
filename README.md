@@ -66,6 +66,14 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Plus State, Minus State](Quantum/PlusState_MinusState.ipynb)
 - [Simon's Algorithm](Quantum/Simon.ipynb)
 
+## Sort / ソートアルゴリズム
+- [Counting Sort](Sort/CountingSort.cpp)
+- [Insertion Sort](Sort/InsertionSort.cpp)
+- [Inversion Number](Sort/InversionNumber.cpp)
+- [Merge Sort](Sort/MergeSort.cpp)
+- [Quick Sort](Sort/QuickSort.cpp)
+- [Sort](Sort/Sort.cpp)
+
 ## String / 文字列アルゴリズム
 - [Distance](String/Distance.cpp)
 - [Manacher's Algorithm](String/Manacher.cpp)
