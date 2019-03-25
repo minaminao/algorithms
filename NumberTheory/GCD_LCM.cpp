@@ -23,11 +23,10 @@ int lcm(const vector<int> &v) {
 // 多倍長整数用
 using Int = int;
 Int gcd(Int x, Int y) {
-	while (true) {
-		if (y == 0)
-			return x;
+	while (y) {
 		Int t = x;
 		x = y;
 		y = t % y;
 	}
+	return x;
 }
