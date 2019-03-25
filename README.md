@@ -13,6 +13,14 @@ GitHub 上で Jupyter Notebook のファイルが
 - [RSA](Cryptography/RSA.ipynb)
 
 ## Data Structures / データ構造
+- [Square Root Decomposition](DataStructures/SquareRootDecomposition)
+  - [Range Add Query](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)
+  - [Range Minimum Query](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)
+  - [Range Sum Query](DataStructures/SquareRootDecomposition/RangeSumQuery.cpp)
+  - [Range Update Query](DataStructures/SquareRootDecomposition/RangeUpdateQuery.cpp)
+  - [RMQ and RUQ](DataStructures/SquareRootDecomposition/RMQandRUQ.cpp)
+  - [RSQ and RAQ](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)
+  - [Square Root Decomposition](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)
 - [Binary Indexed Tree](DataStructures/BinaryIndexedTree.cpp)
 - [k-d Tree](DataStructures/KdTree.cpp)
 - [Treap](DataStructures/Treap.cpp)
@@ -52,6 +60,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Divisors](NumberTheory/Divisors.cpp)
 - [Extended Euclidean Algorithm, Inverse Element](NumberTheory/ExtendedGCD_Inverse.cpp)
 - [GCD, LCM](NumberTheory/ExtendedGCD_Inverse.cpp)
+- [ModInt](NumberTheory/ModInt.cpp)
 - [Modular Arithmetic](NumberTheory/ModularArithmetic.cpp)
 - [Number Theory](NumberTheory/NumberTheory.cpp)
 - [Primality Test](NumberTheory/PrimalityTest.cpp)
