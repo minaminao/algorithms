@@ -25,11 +25,23 @@ GitHub 上で Jupyter Notebook のファイルが
   - [RSQ and RAQ](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)
   - [Square Root Decomposition](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)
 - [Binary Indexed Tree](DataStructures/BinaryIndexedTree.cpp)
+- [Compression](DataStructures\Compression.cpp)
 - [k-d Tree](DataStructures/KdTree.cpp)
 - [Treap](DataStructures/Treap.cpp)
 - [Union–Find](DataStructures/UnionFind.cpp)
 
+## Dynamic Optimization / 動的最適化
+- [Digit DP](DynamicOptimization\DigitDP.cpp)
+- [Dynamic Optimization](DynamicOptimization\DynamicOptimization.cpp)
+- [Largest Rectangle](DynamicOptimization\LargestRectangle.cpp)
+- [Largest Square](DynamicOptimization\LargestSquare.cpp)
+- [Longest Increasing Subsequance](DynamicOptimization\LongestIncreasingSubsequence.cpp)
+- [Traveling Salesman Problem](DynamicOptimization\TravelingSalesmanProblem.cpp)
+
 ## Geometry / 幾何学
+- [Bounding Sphere](Geometry\BoundingSphere.cpp)
+- [Geometry](Geometry\Geometry.cpp)
+- [Geometry 3D](Geometry\Geometry3D.cpp)
 - [Minimum-Weight Triangulation](Geometry/MinimumWeightTriangulation.cpp)
 
 ## Graph Theory / グラフ理論
@@ -102,8 +114,10 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Binary Search](Others/BinarySearch.py)
 - [Gray Code](Others/GrayCode.py)
 - [Number To String](Others/NumberToString.py)
+- [Pop Count](Others\PopCount.cpp)
 - [Sliding Windows](Others/SlidingWindows.cpp)
 - [String To Number](Others/StringToNumber.py)
+- [Sum](Others\Sum.cpp)
 
 ## Debug / デバッグ用
 デバッグ用のコードとテンプレート
