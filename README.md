@@ -79,6 +79,7 @@ GitHub 上で Jupyter Notebook のファイルが
 
 ## Linear Algebra / 線形代数学
 - [Gauss Elimination](LinearAlgebra/GaussElimination.cpp)
+- [Gauss Elimination Modulo A Prime](LinearAlgebra/GaussEliminationMod.cpp)
 
 ## Number Theory / 数論
 - [Binomial Coefficient](NumberTheory/BinomialCoefficient.cpp)

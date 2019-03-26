@@ -1,13 +1,4 @@
-#include "bits/stdc++.h"
-using namespace std;
-#ifdef _DEBUG
-#include "dump.hpp"
-#else
-#define dump(...)
-#endif
-
-const int INF = 0x3f3f3f3f;
-const int MOD = 1'000'000'007;
+#include "ModInt.cpp"
 
 // ガウスの消去法（Gauss elimination）
 // O(n^3)
@@ -16,14 +7,13 @@ const int MOD = 1'000'000'007;
 //   解が複数ある場合は適当な解を出力する
 //
 // Verified:
-//   http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=3437138
-//   http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=3437187
+//   https://yukicoder.me/submissions/326809 (mod 2)
+//   https://yukicoder.me/submissions/329080 (mod 2)
 
-using Num = double;
+using Num = mint;
 using Vec = vector<Num>;
 using Mat = vector<Vec>;
-tuple<bool, int, Vec> gaussianElimination(Mat A, Vec b) {
-	const Num EPS = 1e-5; // 誤差
+tuple<bool, int, Vec> gaussianEliminationMod(Mat A, Vec b) {
 	const int n = A.size(), m = A[0].size();
 	assert(m <= b.size());
 	if (n > b.size())b.resize(n);
@@ -31,12 +21,12 @@ tuple<bool, int, Vec> gaussianElimination(Mat A, Vec b) {
 	while (rank < n && cj < m) {
 		// A[rank][cj] が最大になるように
 		for (int i = rank + 1; i < n; i++) {
-			if (abs(A[i][cj]) > abs(A[rank][cj])) {
+			if (A[i][cj].get() > A[rank][cj].get()) {
 				A[i].swap(A[rank]);
 				swap(b[i], b[rank]);
 			}
 		}
-		if (abs(A[rank][cj]) > EPS) {
+		if (A[rank][cj].get()) {
 			// 係数を 1 に
 			Num d = A[rank][cj];
 			for (int j = 0; j < m; j++)
@@ -55,7 +45,7 @@ tuple<bool, int, Vec> gaussianElimination(Mat A, Vec b) {
 	}
 	// 0 != b[i] だったら不能
 	for (int i = rank; i < n; i++)
-		if (abs(b[i]) > EPS)
+		if (b[i].get())
 			return make_tuple(false, rank, Vec());
 	// 不定
 	// rank != m
@@ -66,8 +56,8 @@ tuple<bool, int, Vec> gaussianElimination(Mat A, Vec b) {
 		if (n != m)
 			return make_tuple(true, rank, Vec());
 		int ci = rank;
-		for (int i = 0; i < min(n, m); i++) {
-			if (abs(A[i][i]) <= EPS) {
+		for (int i = 0; i < n; i++) {
+			if (A[i][i].get() == 0) {
 				if (i != ci) {
 					A[i].swap(A[ci]);
 					swap(b[i], b[ci]);
@@ -81,27 +71,11 @@ tuple<bool, int, Vec> gaussianElimination(Mat A, Vec b) {
 		}
 	}
 	// 後退代入（back substitution）
+	// 1 * * | *     1 * 0 | *
+	// 0 1 * | *  -> 0 1 0 | *
+	// 0 0 1 | *     0 0 1 | *
 	for (int j = m - 1; j >= 0; j--)
 		for (int i = 0; i < j; i++)
 			b[i] -= b[j] * A[i][j];
 	return make_tuple(true, rank, b);
-}
-
-int main() {
-	Mat A; Vec b;
-
-	A = { { 1,3,1 },{ 1,1,-1 },{ 3,11,5 } };
-	b = { 9,1,35 };
-	dump(gaussianElimination(A, b));
-	A = { { 1,0,1 },{ 0,0,1 },{ 0,0,0 } };
-	b = { { 1,3,0 } };
-	dump(gaussianElimination(A, b));
-	A = { { 0,0,1 },{ 1,0,1 },{ 0,0,0 } };
-	b = { { 3,1,0 } };
-	dump(gaussianElimination(A, b));
-	A = { { 0,1,0 },{ 0,0,1 },{ 0,0,0 },{ 1,0,0 } };
-	b = { { 2,3,0,1 } };
-	dump(gaussianElimination(A, b));
-
-	return 0;
 }
