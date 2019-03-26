@@ -1,4 +1,4 @@
-// Morris-Pratt, MP
+// Morris-Pratt algorithm (MP)
 // 一致する位置を全て取得するのは向いていない 最悪 O(n(n+m))
 // http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2495566#1
 struct MorrisPratt {

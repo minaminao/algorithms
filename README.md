@@ -116,7 +116,7 @@ GitHub 上で Jupyter Notebook のファイルが
 ## String / 文字列アルゴリズム
 - [Distance](String/Distance.cpp)
 - [Manacher's Algorithm](String/Manacher.cpp)
-- [Morris Platt](String/MorrisPlatt.cpp)
+- [Morris–Pratt Algorithm](String/MorrisPratt.cpp)
 - [Parser](String/Parser.cpp)
 - [Rolling Hash](String/RollingHash.cpp)
 - [Suffix Array](String/SuffixArray.cpp)
