@@ -10,6 +10,7 @@ bool isPrime(int x) {
 	return true;
 }
 
+#include "ModularArithmetic.cpp"
 // 素数判定（Miller-Rabin primality test）
 // 2^24程度から
 // millerRabinPrimalityTest(n, 5)

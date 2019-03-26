@@ -56,6 +56,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Gauss Elimination](LinearAlgebra/GaussElimination.cpp)
 
 ## Number Theory / 数論
+- [Binomial Coefficient](NumberTheory/BinomialCoefficient.cpp)
 - [Chinese Remainder Theorem](NumberTheory/ChineseRemainderTheorem.py)
 - [Divisors](NumberTheory/Divisors.cpp)
 - [Extended Euclidean Algorithm, Inverse Element](NumberTheory/ExtendedGCD_Inverse.cpp)
