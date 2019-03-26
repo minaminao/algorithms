@@ -16,6 +16,10 @@ GitHub 上で Jupyter Notebook のファイルが
 - [RSA](Cryptography/RSA.ipynb)
 
 ## Data Structures / データ構造
+- [Segment Tree](DataStructures/SegmentTree)
+  - [Range Add Query](DataStructures/SegmentTree/RangeAddQuery.cpp)
+  - [Range Minimum Query](DataStructures/SegmentTree/RangeMinimumQuery.cpp)
+  - [Range Update Query](DataStructures/SegmentTree/RangeUpdateQuery.cpp)
 - [Square Root Decomposition](DataStructures/SquareRootDecomposition)
   - [Range Add Query](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)
   - [Range Minimum Query](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)
@@ -67,7 +71,10 @@ GitHub 上で Jupyter Notebook のファイルが
 - [DFS](GraphTheory/DFS.cpp)
 - [Eulerian Path](GraphTheory/EulerianPath.cpp)
 - [Graph](GraphTheory/Graph.cpp)
-- [Spanning Tree](GraphTheory/SpanningTree.cpp)
+- [Low-link](GraphTheory/LowLink.cpp)
+- [Minimum Spanning Arborescence](GraphTheory/MinimumSpanningArborescence.cpp)
+- [Minimum Spanning Tree](GraphTheory/MinimumSpanningTree.cpp)
+- [Strongly Connected Components](GraphTheory/StronglyConnectedComponents.cpp)
 - [Topological Sort](GraphTheory/TopologicalSort.cpp)
 
 ## Linear Algebra / 線形代数学
@@ -109,6 +116,8 @@ GitHub 上で Jupyter Notebook のファイルが
 ## String / 文字列アルゴリズム
 - [Distance](String/Distance.cpp)
 - [Manacher's Algorithm](String/Manacher.cpp)
+- [Morris Platt](String/MorrisPlatt.cpp)
+- [Parser](String/Parser.cpp)
 - [Rolling Hash](String/RollingHash.cpp)
 - [Suffix Array](String/SuffixArray.cpp)
 - [Z Algorithm](String/ZAlgorithm.cpp)
