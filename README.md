@@ -8,6 +8,9 @@ GitHub 上で Jupyter Notebook のファイルが
 
 となる場合は、[nbviewer](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/) で見れる。
 
+## Combinatorics / 組合せ数学
+- [Combinatorics](Combinatorics/Combinatorics.cpp)
+
 ## Cryptography / 暗号理論
 - [ElGamal](Cryptography/ElGamal.ipynb)
 - [RSA](Cryptography/RSA.ipynb)
