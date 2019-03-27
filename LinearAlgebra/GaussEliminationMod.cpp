@@ -15,7 +15,6 @@ using Vec = vector<Num>;
 using Mat = vector<Vec>;
 tuple<bool, int, Vec> gaussianEliminationMod(Mat A, Vec b) {
 	const int n = A.size(), m = A[0].size();
-	assert(m <= b.size());
 	if (n > b.size())b.resize(n);
 	int rank = 0, cj = 0;
 	while (rank < n && cj < m) {

@@ -25,7 +25,6 @@ using Mat = vector<Vec>;
 tuple<bool, int, Vec> gaussianElimination(Mat A, Vec b) {
 	const Num EPS = 1e-5; // 誤差
 	const int n = A.size(), m = A[0].size();
-	assert(m <= b.size());
 	if (n > b.size())b.resize(n);
 	int rank = 0, cj = 0;
 	while (rank < n && cj < m) {
