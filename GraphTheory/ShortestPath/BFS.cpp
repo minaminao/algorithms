@@ -1,5 +1,6 @@
 // 木 あるいは 辺の重みが 1 のグラフ での最短距離
 // O(E)?
+// http://abc070.contest.atcoder.jp/submissions/1510329
 auto bfs = [&](const Graph &g, int s, Array &dist) {
 	int n = g.size();
 	vector<bool> vis(n);
@@ -22,4 +23,3 @@ auto bfs = [&](const Graph &g, int s, Array &dist) {
 	}
 	return prev;
 };
-// http://abc070.contest.atcoder.jp/submissions/1510329
