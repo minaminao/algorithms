@@ -15,6 +15,7 @@ GitHub 上で Jupyter Notebook のファイルが
 ## Cryptography / 暗号理論
 - [ElGamal](Cryptography/ElGamal.ipynb)
 - [RSA](Cryptography/RSA.ipynb)
+- These implementations are not secure.
 
 ## Data Structures / データ構造
 - [Segment Tree](DataStructures/SegmentTree)
@@ -86,8 +87,9 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Binomial Coefficient](NumberTheory/BinomialCoefficient.cpp)
 - [Chinese Remainder Theorem](NumberTheory/ChineseRemainderTheorem.py)
 - [Divisors](NumberTheory/Divisors.cpp)
-- [Extended Euclidean Algorithm, Inverse Element](NumberTheory/ExtendedGCD_Inverse.cpp)
+- Extended Euclidean Algorithm ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory\ExtendedGCD.py))
 - [GCD, LCM](NumberTheory/ExtendedGCD_Inverse.cpp)
+- Inverse Element ([C++](NumberTheory\ExtendedGCD_Inverse.cpp), [Python3](NumberTheory\Inverse.py))
 - [ModInt](NumberTheory/ModInt.cpp)
 - [Modular Arithmetic](NumberTheory/ModularArithmetic.cpp)
 - [Number Theory](NumberTheory/NumberTheory.cpp)

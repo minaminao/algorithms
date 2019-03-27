@@ -29,19 +29,18 @@ bool warshallFloyd(const Graph &g, Matrix &dist) {
 	return !negative_cycle;
 }
 
-//全点対間最短経路
-//Warshall-Floyd O(|V|^3)
-//インライン版
+// 全点対間最短経路
+// Warshall-Floyd O(|V|^3)
+// インライン版
+// http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2243165
 void warshallFloyd() {
-	static const int V = 100;
-	static int wf[V][V];
 	int N, M;
 
-	rep(i, 0, N)rep(j, 0, N)wf[i][j] = INF;
+	vector<vector<int>> wf(N, vector<int>(N, INF));
 	rep(i, 0, N)wf[i][i] = 0;
 
 	rep(i, 0, M) {
-		int s, d, w; cin >> s >> d >> w; s--, d--;
+		int s, d, w;
 		wf[s][d] = min(wf[s][d], w); // 有向
 	}
 
@@ -60,4 +59,3 @@ void warshallFloyd() {
 	rep(k, 0, N)
 		if (wf[i][k] != INF && wf[k][j] != INF && wf[k][k] < 0);
 }
-//http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2243165

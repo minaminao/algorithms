@@ -33,8 +33,6 @@ ostream &operator<<(ostream &os, const ModInt<MOD> &m) { return os << m.x; }
 template<int MOD>
 istream &operator>>(istream &is, ModInt<MOD> &m) { signed long long s; is >> s; m = ModInt<MOD>(s); return is; };
 
-using mint = ModInt<MOD>;
-
 template<int MOD>
 ModInt<MOD> pow(ModInt<MOD> a, unsigned long long k) {
 	ModInt<MOD> r = 1;
@@ -45,3 +43,5 @@ ModInt<MOD> pow(ModInt<MOD> a, unsigned long long k) {
 	}
 	return r;
 }
+
+using mint = ModInt<MOD>;
