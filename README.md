@@ -92,6 +92,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Number Theory](NumberTheory/NumberTheory.cpp)
 - [Primality Test](NumberTheory/PrimalityTest.cpp)
 - [Prime](NumberTheory/Prime.cpp)
+- [Radix](NumberTheory/Radix.cpp)
 
 ## Quantum / 量子アルゴリズム
 - [Adder](Quantum/Adder.ipynb)
