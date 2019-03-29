@@ -11,6 +11,8 @@ GitHub 上で Jupyter Notebook のファイルが
 ## Combinatorics / 組合せ数学
 - [Combinatorics](Combinatorics/Combinatorics.cpp)
 - [Inclusion–Exclusion Principle](Combinatorics/InclusionExclusionPrinciple.cpp)
+- [Partition Numbers](Combinatorics/PartitionNumbers.cpp)
+- [Stirling Numbers](Combinatorics/StirlingNumbers.cpp)
 
 ## Cryptography / 暗号理論
 - [ElGamal](Cryptography/ElGamal.ipynb)
@@ -87,9 +89,9 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Binomial Coefficient](NumberTheory/BinomialCoefficient.cpp)
 - [Chinese Remainder Theorem](NumberTheory/ChineseRemainderTheorem.py)
 - [Divisors](NumberTheory/Divisors.cpp)
-- Extended Euclidean Algorithm ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory\ExtendedGCD.py))
+- Extended Euclidean Algorithm ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py))
 - [GCD, LCM](NumberTheory/ExtendedGCD_Inverse.cpp)
-- Inverse Element ([C++](NumberTheory\ExtendedGCD_Inverse.cpp), [Python3](NumberTheory\Inverse.py))
+- Inverse Element ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py))
 - [ModInt](NumberTheory/ModInt.cpp)
 - [Modular Arithmetic](NumberTheory/ModularArithmetic.cpp)
 - [Number Theory](NumberTheory/NumberTheory.cpp)
