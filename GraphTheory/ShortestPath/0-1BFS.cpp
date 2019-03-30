@@ -2,6 +2,9 @@
 // コストが 0 か 1 のグラフ上での最短距離
 // Dijkstra と同様の考え
 // O(|E|+|V|)
+// Verified:
+//   https://yukicoder.me/submissions/330319
+//   http://arc061.contest.atcoder.jp/submissions/1482669
 auto zeroOneBfs = [&](const Graph &g, int s, Array &dist) {
 	int n = g.size();
 	deque<int> dq = { s };
@@ -20,4 +23,3 @@ auto zeroOneBfs = [&](const Graph &g, int s, Array &dist) {
 		}
 	}
 };
-// http://arc061.contest.atcoder.jp/submissions/1482669

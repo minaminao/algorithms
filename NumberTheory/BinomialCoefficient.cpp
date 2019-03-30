@@ -1,29 +1,11 @@
 #include "ModInt.cpp"
 
-// n < 10^7
-// 前計算 O(n)
-// 計算 O(1)
-vector<mint> fact, factinv;
-void precomputeFact(int n) {
-	n = min(n, mint::kMod - 1); //  N >= kMod  =>  N! = 0 (mod kMod)
-	fact.resize(n + 1); factinv.resize(n + 1);
-	fact[0] = 1;
-	for (int i = 1; i < n + 1; i++)
-		fact[i] = fact[i - 1] * i;
-	factinv[n] = fact[n].inverse();
-	for (int i = n; i >= 1; i--)
-		factinv[i - 1] = factinv[i] * i; // ((i-1)!)^(-1) = (i!)^(-1) * i
-}
-mint binom(int n, int r) {
-	if (n >= mint::kMod)
-		return binom(n % mint::kMod, r % mint::kMod) * binom(n / mint::kMod, r / mint::kMod);
-	return r > n ? 0 : fact[n] * factinv[n - r] * factinv[r];
-}
+// 前計算 O(n) 計算 O(1) は Combinatorics.cpp を参照
 
 // O(r)
-mint binom_r(int n, int r) {
+mint binom(int n, int k) {
 	mint ret = 1;
-	for (int i = 0; i < r; i++) {
+	for (int i = 0; i < k; i++) {
 		ret *= n - i;
 		ret /= i + 1;
 	}
