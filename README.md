@@ -123,10 +123,13 @@ GitHub 上で Jupyter Notebook のファイルが
 
 ## String / 文字列アルゴリズム
 - [Distance](String/Distance.cpp)
+- [Fill](String/Fill.cpp)
 - [Manacher's Algorithm](String/Manacher.cpp)
 - [Morris–Pratt Algorithm](String/MorrisPratt.cpp)
 - [Parser](String/Parser.cpp)
+- [Replace](String/Replace.cpp)
 - [Rolling Hash](String/RollingHash.cpp)
+- [Split, Join](String/Split_Join.cpp)
 - [Suffix Array](String/SuffixArray.cpp)
 - [Z Algorithm](String/ZAlgorithm.cpp)
 
