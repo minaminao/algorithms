@@ -69,6 +69,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Tree](GraphTheory/Tree)
   - [Lowest Common Ancestors](GraphTheory/Tree/LowestCommonAncestors.cpp)
   - [Tree](GraphTheory/Tree/Tree.cpp)
+- [All Pairs Widest Paths](GraphTheory/AllPairsWidestPaths.cpp)
 - [BFS](GraphTheory/BFS.cpp)
 - [Bipartite Graph](GraphTheory/BipartiteGraph.cpp)
 - [Cycle Detection](GraphTheory/CycleDetection.cpp)

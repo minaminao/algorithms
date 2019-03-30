@@ -1,4 +1,9 @@
-// 全点対間最短経路 
+#include "Dijkstra.cpp"
+
+// 全点対最短路問題
+// Dijkstra法
+// O(|V|(|E|+|V|)log|V|)
+// Floyd–Warshall法より速い
 auto allPairsShortestPathsByDijkstra = [&](const Graph &g, Matrix &dists) {
 	int n = g.size();
 	dists.resize(n);
@@ -6,10 +11,10 @@ auto allPairsShortestPathsByDijkstra = [&](const Graph &g, Matrix &dists) {
 		dijkstra(g, i, dists[i]);
 };
 
-//全点対間最短経路 
-//Warshall-Floyd O(|V|^3)
-//戻り値: 負閉路なし:true あり:false
-bool warshallFloyd(const Graph &g, Matrix &dist) {
+// 全点対最短経路 
+// Floyd–Warshall O(|V|^3)
+// 戻り値: 負閉路なし:true あり:false
+bool floydWarshall(const Graph &g, Matrix &dist) {
 	int n = g.size();
 	dist.assign(n, Array(n, INF));
 	for (int i = 0; i < n; i++) dist[i][i] = 0;
@@ -29,33 +34,33 @@ bool warshallFloyd(const Graph &g, Matrix &dist) {
 	return !negative_cycle;
 }
 
-// 全点対間最短経路
-// Warshall-Floyd O(|V|^3)
+// 全点対最短経路
+// Floyd–Warshall O(|V|^3)
 // インライン版
 // http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2243165
-void warshallFloyd() {
+void floydWarshall() {
 	int N, M;
 
-	vector<vector<int>> wf(N, vector<int>(N, INF));
-	rep(i, 0, N)wf[i][i] = 0;
+	vector<vector<int>> fw(N, vector<int>(N, INF));
+	rep(i, 0, N)fw[i][i] = 0;
 
 	rep(i, 0, M) {
 		int s, d, w;
-		wf[s][d] = min(wf[s][d], w); // 有向
+		fw[s][d] = min(fw[s][d], w); // 有向
 	}
 
 	rep(k, 0, N)rep(i, 0, N)rep(j, 0, N) {
-		if (wf[i][k] != INF && wf[k][j] != INF)
-			wf[i][j] = min(wf[i][j], wf[i][k] + wf[k][j]);
+		if (fw[i][k] != INF && fw[k][j] != INF)
+			fw[i][j] = min(fw[i][j], fw[i][k] + fw[k][j]);
 	}
 
 
 	int i, j;
 
-	//iを通る負閉路があるか
-	wf[i][i] < 0;
+	// iを通る負閉路があるか
+	fw[i][i] < 0;
 
-	//iからjへ向かう道であり負閉路を通るものがあるか
+	// iからjへ向かう道であり負閉路を通るものがあるか
 	rep(k, 0, N)
-		if (wf[i][k] != INF && wf[k][j] != INF && wf[k][k] < 0);
+		if (fw[i][k] != INF && fw[k][j] != INF && fw[k][k] < 0);
 }
