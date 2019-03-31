@@ -95,7 +95,6 @@ GitHub 上で Jupyter Notebook のファイルが
 - Inverse Element ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py))
 - [ModInt](NumberTheory/ModInt.cpp)
 - [Modular Arithmetic](NumberTheory/ModularArithmetic.cpp)
-- [Negative Radix](NumberTheory/NegativeRadix.cpp)
 - [Number Theory](NumberTheory/NumberTheory.cpp)
 - [Primality Test](NumberTheory/PrimalityTest.cpp)
 - [Prime](NumberTheory/Prime.cpp)
