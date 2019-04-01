@@ -102,7 +102,10 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Quadratic Residue](NumberTheory/QuadraticResidue.cpp)
 - [Radix](NumberTheory/Radix.cpp)
 
-## NumericalAnalysis / 数値解析
+## Numerical Analysis / 数値解析
+- [Bisection Method](NumericalAnalysis/BisectionMethod.cpp)
+- [Cubic Equation](NumericalAnalysis/CubicEquation.cpp)
+- [Numerical Analysis](NumericalAnalysis/NumericalAnalysis.cpp)
 - [Quadratic Equation](NumericalAnalysis/QuadraticEquation.cpp)
 
 ## Quantum / 量子アルゴリズム
