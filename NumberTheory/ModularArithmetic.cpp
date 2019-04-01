@@ -23,13 +23,21 @@ long long modmul(long long a, long long b, long long mod) {
 	return x % mod;
 }
 
-// オーバーフローする可能性があれば掛け算にmodmul()を使う
-long long modpow(long long a, long long exponent, long long mod) {
+// 累乗
+// O(log e)
+// mod^2 が long long の最大値より大きければオーバーフローするので掛け算に modmul を使う
+long long modpow(long long a, long long e, long long mod) {
 	long long res = 1;
-	while (exponent > 0) {
-		if (exponent & 1)res = res * a % mod;
-		a = a * a % mod;
-		exponent >>= 1;
+	while (e > 0) {
+		if (e & 1)res = res * a % mod; // modmul(res, a, mod);
+		a = a * a % mod; // modmul(a, a, mod);
+		e >>= 1;
 	}
 	return res;
+}
+
+// 逆元
+// O(log mod)
+long long modinv(long long a, long long mod) {
+	return modpow(a, mod - 2, mod);
 }

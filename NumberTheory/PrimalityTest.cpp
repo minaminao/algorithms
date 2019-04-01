@@ -23,7 +23,7 @@ bool millerRabinPrimalityTest(long long x, int iteration) {
 		long long a = rand() % (x - 1) + 1, tmp = s;
 		long long mod = modpow(a, tmp, x);
 		while (tmp != x - 1 && mod != 1 && mod != x - 1) {
-			mod = modmul(mod, mod, x);
+			mod = modmul(mod, mod, x); // mod * mod % x;
 			tmp *= 2;
 		}
 		if (mod != x - 1 && tmp % 2 == 0)return false;

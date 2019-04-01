@@ -5,7 +5,7 @@
 // Verified: http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=3452788
 struct PrimeFactorization {
 	int max_n;
-	vector<int> is_prime;
+	vector<bool> is_prime;
 	vector<int> primes;
 	// 前処理
 	PrimeFactorization(int max_n) :max_n(max_n) {
@@ -14,7 +14,7 @@ struct PrimeFactorization {
 		is_prime[0] = is_prime[1] = false;
 		for (int i = 2; i*i <= s; i++) {
 			if (!is_prime[i])continue;
-			for (int j = i + i; j <= s; j += i)
+			for (int j = i * i; j <= s; j += i)
 				is_prime[j] = false;
 		}
 		for (int i = 0; i <= s; i++)
@@ -45,7 +45,7 @@ struct PrimeFactorization {
 // クエリ O(lg n)
 struct PrimeFactorization {
 	int max_n;
-	vector<int> is_prime;
+	vector<bool> is_prime;
 	vector<int> min_factor;
 	// 前処理
 	// O(n + √n loglog √n)
@@ -55,7 +55,7 @@ struct PrimeFactorization {
 		iota(min_factor.begin(), min_factor.end(), 0);
 		for (int i = 2; i <= max_n; i++) {
 			if (!is_prime[i])continue;
-			for (int j = i + i; j <= max_n; j += i) {
+			for (int j = i * i; j <= max_n; j += i) {
 				is_prime[j] = false;
 				if (min_factor[j] > i)
 					min_factor[j] = i;
