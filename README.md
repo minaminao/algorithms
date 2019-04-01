@@ -10,6 +10,7 @@ GitHub 上で Jupyter Notebook のファイルが
 
 ## Combinatorics / 組合せ数学
 - [Combinatorics](Combinatorics/Combinatorics.cpp)
+- [Factorial](Combinatorics/Factorial.cpp)
 - [Inclusion–Exclusion Principle](Combinatorics/InclusionExclusionPrinciple.cpp)
 - [Partition Numbers](Combinatorics/PartitionNumbers.cpp)
 - [Stirling Numbers](Combinatorics/StirlingNumbers.cpp)

@@ -1,6 +1,7 @@
 #include "ModInt.cpp"
 
 // 前計算 O(n) 計算 O(1) は Combinatorics.cpp を参照
+// 手元計算 O(n) 前計算 O(√n) 計算 O(√n) は Factorial.cpp を参照
 
 // O(r)
 mint binom(int n, int k) {
