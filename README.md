@@ -99,7 +99,11 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Primality Test](NumberTheory/PrimalityTest.cpp)
 - [Prime](NumberTheory/Prime.cpp)
 - [Prime Factorization](NumberTheory/PrimeFactorization.cpp)
+- [Quadratic Residue](NumberTheory/QuadraticResidue.cpp)
 - [Radix](NumberTheory/Radix.cpp)
+
+## NumericalAnalysis / 数値解析
+- [Quadratic Equation](NumericalAnalysis/QuadraticEquation.cpp)
 
 ## Quantum / 量子アルゴリズム
 - [Adder](Quantum/Adder.ipynb)
