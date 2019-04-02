@@ -1,7 +1,10 @@
 #include "ModInt.cpp"
 
 // スターリング数
-// Verified: https://yukicoder.me/submissions/330289
+// O(n^2)
+// Verified: 
+//   https://yukicoder.me/submissions/330289
+//   https://yukicoder.me/submissions/334614
 vector<vector<mint>> stirlingNumbers(int n) {
 	vector<vector<mint>> S(n + 1, vector<mint>(n + 1, 0));
 	S[0][0] = 1;

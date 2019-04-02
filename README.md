@@ -73,6 +73,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [All Pairs Widest Paths](GraphTheory/AllPairsWidestPaths.cpp)
 - [BFS](GraphTheory/BFS.cpp)
 - [Bipartite Graph](GraphTheory/BipartiteGraph.cpp)
+- [Chromatic Polynomial](GraphTheory/ChromaticPolynomial.cpp)
 - [Cycle Detection](GraphTheory/CycleDetection.cpp)
 - [DFS](GraphTheory/DFS.cpp)
 - [Eulerian Path](GraphTheory/EulerianPath.cpp)
