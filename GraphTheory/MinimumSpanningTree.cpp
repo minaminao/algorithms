@@ -1,14 +1,13 @@
 #include "Graph.cpp"
 #include "UnionFInd.cpp"
 
-/*
-最小全域木
-Kruskal法
-非連結グラフでは最小全域森
-計算量: O(E log E)
-引数: グラフ
-戻り値: (総コスト, 辺集合)
-*/
+// 最小全域木
+// Kruskal法
+// 非連結グラフでは最小全域森
+// 計算量: O(E log E)
+// 引数: グラフ
+// 戻り値: (総コスト, 辺集合)
+// http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2235604
 pair<Weight, Edges> kruskal(const Graph &g) {
 	int n = g.size();
 	UnionFind uf(n);
@@ -27,16 +26,13 @@ pair<Weight, Edges> kruskal(const Graph &g) {
 		}
 	return make_pair(total, mst);
 }
-// http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2235604
 
-/*
-最小全域木
-Kruskal法
-非連結グラフでは最小全域森
-計算量: O(V^2 + E log V) (E = V^2 より log E = 2 log V)
-引数: グラフ（行列表現）
-戻り値: (総コスト, 辺集合)
-*/
+// 最小全域木
+// Kruskal法
+// 非連結グラフでは最小全域森
+// 計算量: O(V^2 + E log V) (E = V^2 より log E = 2 log V)
+// 引数: グラフ（行列表現）
+// 戻り値: (総コスト, 辺集合)
 pair<Weight, Edges> kruskal(const Matrix &m) {
 	int n = m.size();
 	Graph g(n);
@@ -47,9 +43,9 @@ pair<Weight, Edges> kruskal(const Matrix &m) {
 	return kruskal(g);
 }
 
-//最小全域木 (Minimum Spanning Tree)
-//Prim O(|E|log|V|)
-//root から到達可能な頂点が対象
+// 最小全域木 (Minimum Spanning Tree)
+// Prim O(|E|log|V|)
+// root から到達可能な頂点が対象
 pair<Weight, Edges> prim(const Graph &g, int root = 0) {
 	int n = g.size();
 	Edges mst;

@@ -5,6 +5,7 @@
 // Verified:
 //   https://yukicoder.me/submissions/334614
 mint chromaticPolynomialOfACompleteBipartiteGraph(int n, int m, mint x) {
+	if (n > m)swap(n, m);
 	auto S = stirlingNumbers(n);
 	mint ret = 0;
 	mint a = x;
