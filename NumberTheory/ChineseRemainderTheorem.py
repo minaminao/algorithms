@@ -1,7 +1,7 @@
 from ExtendedGCD import *
 
 
-def compute_crt(a, n):
+def crt(a, n):
     assert len(a) == len(n)
     A = 0
     N = 1  # lcm(n_1,n_2,...)
@@ -17,4 +17,4 @@ def compute_crt(a, n):
 
 
 if __name__ == "__main__":
-    print(compute_crt([2, 3, 2], [3, 5, 7]))
+    print(crt([2, 3, 2], [3, 5, 7]))
