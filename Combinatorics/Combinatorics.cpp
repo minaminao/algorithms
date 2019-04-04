@@ -26,6 +26,7 @@ void precompute(int n) {
 }
 
 mint C(int n, int k) {
+	if (k < 0 || n < k)return 0;
 	// Lucas's theorem
 	if (n >= mint::kMod)
 		return C(n % mint::kMod, k % mint::kMod) * C(n / mint::kMod, k / mint::kMod);
@@ -34,12 +35,13 @@ mint C(int n, int k) {
 }
 
 mint P(int n, int k) {
+	if (k < 0 || n < k)return 0;
 	precompute(n);
 	return k > n ? 0 : fact[n] * factinv[n - k];
 }
 
 mint H(int n, int k) {
-	if (n == 0 && k == 0)return 1; // H(0,0) = C(-1,0) = 1
+	if (n == 0 && k == 0)return 1; // H(0,0) = 1 != C(-1,0) = 0
 	return C(n + k - 1, k);
 }
 

@@ -90,9 +90,10 @@ GitHub 上で Jupyter Notebook のファイルが
 
 ## Number Theory / 数論
 - [Binomial Coefficient](NumberTheory/BinomialCoefficient.cpp)
-- [Chinese Remainder Theorem](NumberTheory/ChineseRemainderTheorem.py)
+- Chinese Remainder Theorem ([C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py)
 - [Divisors](NumberTheory/Divisors.cpp)
 - Extended Euclidean Algorithm ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py))
+- [Euler's Totient Function](NumberTheory/EulerTotientFunction.cpp)
 - [GCD, LCM](NumberTheory/ExtendedGCD_Inverse.cpp)
 - Inverse Element ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py))
 - [ModInt](NumberTheory/ModInt.cpp)
