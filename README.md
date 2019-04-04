@@ -88,6 +88,9 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Gauss Elimination](LinearAlgebra/GaussElimination.cpp)
 - [Gauss Elimination Modulo A Prime](LinearAlgebra/GaussEliminationMod.cpp)
 
+## Machine Learning / 機械学習
+- [Least Squares](MachineLearning/LeastSquares.py)
+
 ## Number Theory / 数論
 - [Binomial Coefficient](NumberTheory/BinomialCoefficient.cpp)
 - Chinese Remainder Theorem ([C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py)
@@ -96,6 +99,8 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Euler's Totient Function](NumberTheory/EulerTotientFunction.cpp)
 - [GCD, LCM](NumberTheory/ExtendedGCD_Inverse.cpp)
 - Inverse Element ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py))
+- [Legendre's Formula](NumberTheory/LegendreFormula.cpp)
+- [Log Factorial (Stirling's Approximation)](NumberTheory/LogFactorial.cpp)
 - [ModInt](NumberTheory/ModInt.cpp)
 - [Modular Arithmetic](NumberTheory/ModularArithmetic.cpp)
 - [Number Theory](NumberTheory/NumberTheory.cpp)

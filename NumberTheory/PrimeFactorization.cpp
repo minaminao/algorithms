@@ -3,37 +3,56 @@
 // 前処理 O(√n loglog √n)
 // クエリ O(√n/ln(√n) + lg(n)) 素数定理と素因数の個数より
 // Verified: http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=3452788
+template<typename T>
 struct PrimeFactorization {
-	int max_n;
+	T max_n;
 	vector<bool> is_prime;
-	vector<int> primes;
+	vector<T> primes;
 	// 前処理
-	PrimeFactorization(int max_n) :max_n(max_n) {
-		int s = sqrt(max_n);
+	PrimeFactorization(T max_n) :max_n(max_n) {
+		T s = sqrt(max_n);
 		is_prime.assign(s + 1, true);
 		is_prime[0] = is_prime[1] = false;
-		for (int i = 2; i*i <= s; i++) {
+		for (T i = 2; i*i <= s; i++) {
 			if (!is_prime[i])continue;
-			for (int j = i * i; j <= s; j += i)
+			for (T j = i * i; j <= s; j += i)
 				is_prime[j] = false;
 		}
-		for (int i = 0; i <= s; i++)
+		for (T i = 0; i <= s; i++)
 			if (is_prime[i])
 				primes.emplace_back(i);
 	}
-	// 昇順で素因数を返す
+	// 素因数を指数個分並べて昇順で返す
 	// √n以下の素数に対して割り切れるか調べる
-	vector<int> factorize(int n) {
+	vector<T> factorize(T n) {
 		assert(n >= 2);
-		vector<int> factors;
+		vector<T> factors;
 		for (auto &p : primes) {
 			while (n%p == 0) {
 				n /= p;
-				factors.emplace_back(p);
+				factors.push_back(p);
 			}
 		}
-		if (n != 1)factors.emplace_back(n);
+		if (n != 1)
+			factors.push_back(n);
 		return factors;
+	}
+	// 素因数とその指数のペアを昇順で返す
+	vector<pair<T, int>> factorizeCount(T n) {
+		assert(n >= 2);
+		vector<pair<T, int>> ret;
+		for (auto &p : primes) {
+			int cnt = 0;
+			while (n%p == 0) {
+				n /= p;
+				cnt++;
+			}
+			if (cnt > 0)
+				ret.emplace_back(p, cnt);
+		}
+		if (n != 1)
+			ret.emplace_back(n, 1);
+		return ret;
 	}
 };
 
