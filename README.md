@@ -42,6 +42,7 @@ GitHub 上で Jupyter Notebook のファイルが
 ## Dynamic Optimization / 動的最適化
 - [Digit DP](DynamicOptimization/DigitDP.cpp)
 - [Dynamic Optimization](DynamicOptimization/DynamicOptimization.cpp)
+- [Game Theory](DynamicOptimization/GameTheory.cpp)
 - [Largest Rectangle](DynamicOptimization/LargestRectangle.cpp)
 - [Largest Square](DynamicOptimization/LargestSquare.cpp)
 - [Longest Increasing Subsequance](DynamicOptimization/LongestIncreasingSubsequence.cpp)
@@ -137,6 +138,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Insertion Sort](Sort/InsertionSort.cpp)
 - [Inversion Number](Sort/InversionNumber.cpp)
 - [Merge Sort](Sort/MergeSort.cpp)
+- [Minimum Numbers Of Swaps)(Sort/MinimumNumbersOfSwap.cpp)]
 - [Quick Sort](Sort/QuickSort.cpp)
 - [Sort](Sort/Sort.cpp)
 

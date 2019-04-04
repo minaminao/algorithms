@@ -19,6 +19,6 @@ vector<int> getPrimes(int n) {
 	vector<int> primes;
 	for (int i = 0; i <= n; i++)
 		if (is_prime[i])
-			primes.emplace_back(i);
+			primes.push_back(i);
 	return primes;
 }

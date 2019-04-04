@@ -18,7 +18,9 @@ mint binom(int n, int k) {
 // double なら 10^308 くらいまでOK
 // C[n][r]: nCr
 // r が小さいなら O(nr) にできる
+// Verified: https://yukicoder.me/submissions/335500
 using Num = long long;
+const Num BINOM_MAX = 1LL << 60;
 vector<vector<Num>> C;
 vector<vector<Num>> precomputeBinom(int n) {
 	vector<Num> a(1, 1), b(2, 1);
@@ -27,8 +29,12 @@ vector<vector<Num>> precomputeBinom(int n) {
 		swap(a, b);
 		b.resize(i);
 		b[0] = 1; b[i - 1] = 1;
-		for (int j = 1; j < i - 1; j++)
-			b[j] = a[j - 1] + a[j];
+		for (int j = 1; j < i - 1; j++) {
+			if (a[j - 1] == BINOM_MAX || a[j] == BINOM_MAX || a[j - 1] + a[j] > BINOM_MAX)
+				b[j] = BINOM_MAX;
+			else
+				b[j] = a[j - 1] + a[j];
+		}
 		C.emplace_back(b);
 	}
 	return C;
