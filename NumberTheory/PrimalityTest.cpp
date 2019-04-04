@@ -14,19 +14,76 @@ bool isPrime(int x) {
 // 素数判定（Miller-Rabin primality test）
 // 2^24程度から
 // millerRabinPrimalityTest(n, 5)
-bool millerRabinPrimalityTest(long long x, int iteration) {
-	if (x < 2)return false;
-	if (x != 2 && x % 2 == 0)return false;
-	long long s = x - 1;
-	while (s % 2 == 0)s /= 2;
+// modmul は遅いので極力使わない __uint128_t や BigInt を使う
+// Verified: 
+//   https://yukicoder.me/submissions/335299
+//   https://yukicoder.me/submissions/335326
+//using u128 = __uint128_t;
+template<typename T>
+bool millerRabinPrimalityTest(T n, int iteration = 5) {
+	if (n < 2)return false;
+	if (n == 2)return true;
+	if (n % 2 == 0)return false;
+	T d = n - 1;
+	while (d % 2 == 0)d /= 2;
 	for (int i = 0; i < iteration; i++) {
-		long long a = rand() % (x - 1) + 1, tmp = s;
-		long long mod = modpow(a, tmp, x);
-		while (tmp != x - 1 && mod != 1 && mod != x - 1) {
-			mod = modmul(mod, mod, x); // mod * mod % x;
-			tmp *= 2;
+		T a = rand() % (n - 1) + 1, t = d;
+		T mod = modpow(a, t, n);
+		while (t != n - 1 && mod != 1 && mod != n - 1) {
+			mod = mod * mod % n; //modmul(mod, mod, n);
+			t *= 2;
 		}
-		if (mod != x - 1 && tmp % 2 == 0)return false;
+		if (mod != n - 1 && t % 2 == 0)return false;
 	}
 	return true;
+}
+
+// 素数の累乗か判定
+// Miller-Rabin素数判定法を用いる
+// Verified: https://yukicoder.me/submissions/335324
+template<typename T>
+bool isPrimePower(T n, int iteration = 5) {
+	T t = n, R = 0;
+	while (t) {
+		R++;
+		t >>= 1;
+	}
+	for (int r = 1; r <= R; r++) {
+		auto f = [&](T x) {
+			int k = r;
+			T y = 1;
+			while (k) {
+				if (y * x > n)return true; // オーバーフロー対策
+				if (k & 1) y *= x;
+				x *= x;
+				k >>= 1;
+			}
+			return y >= n;
+		};
+		auto binarySearch = [&](T ng, T ok) {
+			if (f(ng))return ng;
+			while (ng + 1 < ok) {
+				T m = (ng + ok) / 2;
+				if (f(m))
+					ok = m;
+				else
+					ng = m;
+			}
+			return ok;
+		};
+		auto power = [&](T a, int k) {
+			T r = 1;
+			while (k) {
+				if (k & 1) r *= a;
+				a *= a;
+				k >>= 1;
+			}
+			return r;
+		};
+		T p = binarySearch(T(2), n + 1);
+		if (power(p, r) != n)continue;
+		if (millerRabinPrimalityTest(p, iteration))
+			return true;
+	}
+	return false;
 }

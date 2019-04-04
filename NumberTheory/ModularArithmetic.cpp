@@ -12,9 +12,10 @@ int modulo(int x, int mod) {
 	return (x%mod < 0) ? x % mod + abs(mod) : x % mod;
 }
 
-// (a*b) % mod 
-long long modmul(long long a, long long b, long long mod) {
-	long long x = 0, y = a % mod;
+// (a*b) % mod
+template<typename T>
+T modmul(T a, T b, T mod) {
+	T x = 0, y = a % mod;
 	while (b > 0) {
 		if (b & 1)x = x + y % mod;
 		y = y * 2 % mod;
@@ -25,9 +26,10 @@ long long modmul(long long a, long long b, long long mod) {
 
 // 累乗
 // O(log e)
-// mod^2 が long long の最大値より大きければオーバーフローするので掛け算に modmul を使う
-long long modpow(long long a, long long e, long long mod) {
-	long long res = 1;
+// mod^2 が T の最大値より大きければオーバーフローするので掛け算に modmul を使う
+template<typename T>
+T modpow(T a, T e, T mod) {
+	T res = 1;
 	while (e > 0) {
 		if (e & 1)res = res * a % mod; // modmul(res, a, mod);
 		a = a * a % mod; // modmul(a, a, mod);
