@@ -14,7 +14,7 @@ struct ModInt {
 	ModInt operator-(ModInt m)const { return ModInt(*this) -= m; }
 	ModInt operator*(ModInt m)const { return ModInt(*this) *= m; }
 	ModInt operator/(ModInt m)const { return ModInt(*this) /= m; }
-	ModInt operator-()const { return ModInt(MOD - x); }
+	ModInt operator-()const { return ModInt(MOD - (signed)x); }
 	bool operator==(ModInt m)const { return x == m.x; }
 	bool operator!=(ModInt m)const { return x != m.x; }
 	ModInt inverse()const {

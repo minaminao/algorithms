@@ -4,6 +4,7 @@
 // 整数部 x と小数部 y に分けると、n! = y e^x として表せる
 // ただしそれを計算しようとすると容易にオーバーフローする
 // n が小さければ愚直に計算する
+// Verified: https://yukicoder.me/submissions/335421
 const double PI = acos(-1);
 double logFactorial(long long n) {
 	if (n < 100) {

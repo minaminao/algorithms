@@ -92,6 +92,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Least Squares](MachineLearning/LeastSquares.py)
 
 ## Number Theory / 数論
+- [Bernoulli Numbers](NumberTheory/BernoulliNumbers.cpp)
 - [Binomial Coefficient](NumberTheory/BinomialCoefficient.cpp)
 - Chinese Remainder Theorem ([C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py)
 - [Divisors](NumberTheory/Divisors.cpp)
@@ -109,6 +110,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Prime Factorization](NumberTheory/PrimeFactorization.cpp)
 - [Quadratic Residue](NumberTheory/QuadraticResidue.cpp)
 - [Radix](NumberTheory/Radix.cpp)
+- [Sum Of Powers (Faulhaber's Formula)](NumberTheory/SumOfPowers.cpp)
 
 ## Numerical Analysis / 数値解析
 - [Bisection Method](NumericalAnalysis/BisectionMethod.cpp)
