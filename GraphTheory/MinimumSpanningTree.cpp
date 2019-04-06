@@ -6,9 +6,9 @@
 // 非連結グラフでは最小全域森
 // 計算量: O(E log E)
 // 引数: グラフ
-// 戻り値: (総コスト, 辺集合)
+// 戻り値: (総コスト, 辺集合, 木かどうか)
 // http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2235604
-pair<Weight, Edges> kruskal(const Graph &g) {
+tuple<Weight, Edges, bool> kruskal(const Graph &g) {
 	int n = g.size();
 	UnionFind uf(n);
 	Edges es;
@@ -24,7 +24,7 @@ pair<Weight, Edges> kruskal(const Graph &g) {
 			mst.push_back(e);
 			total += e.w;
 		}
-	return make_pair(total, mst);
+	return make_tuple(total, mst, uf.size == 1);
 }
 
 // 最小全域木

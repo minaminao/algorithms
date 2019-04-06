@@ -4,7 +4,7 @@ struct Edge {
 	Edge() {};
 	Edge(int s, int d, Weight w) : s(s), d(d), w(w) {};
 };
-bool operator<(const Edge &e1, const Edge &e2) { return e1.w < e2.w; }
+bool operator<(const Edge &e1, const Edge &e2) { return e1.w == e2.w ? (e1.s == e2.s ? e1.d < e2.d : e1.s < e2.s) : e1.w < e2.w; }
 bool operator>(const Edge &e1, const Edge &e2) { return e2 < e1; }
 inline ostream &operator<<(ostream &os, const Edge &e) { return (os << '(' << e.s << ", " << e.d << ", " << e.w << ')'); }
 

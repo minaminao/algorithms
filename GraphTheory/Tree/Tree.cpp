@@ -72,6 +72,29 @@ vector<P> depth(const Graph &g) {
 	return ret;
 }
 
+// 無向木を anti-arborescence に変換
+// 連結無向グラフから変換することも可能
+// (親, weight) の配列を返す
+vector<pair<int, Weight>> antiArborescence(const Graph &g, int root = 0) {
+	int n = g.size();
+	vector<bool> vis(n);
+	queue<int> q; q.emplace(root);
+	vector<pair<int, Weight>> ret(n); ret[root] = make_pair(-1, 0);
+	while (q.size()) {
+		int u = q.front(); q.pop();
+		if (vis[u])continue;
+		vis[u] = true;
+		for (auto &e : g[u]) {
+			if (vis[e.d])continue;
+			ret[e.d] = make_pair(u, e.w);
+			q.emplace(e.d);
+		}
+	}
+	return ret;
+}
+
+
+
 void f() {
 	// 頂点 v の親、左の子、右の子
 	int tree[100];

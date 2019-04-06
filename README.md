@@ -33,9 +33,11 @@ GitHub 上で Jupyter Notebook のファイルが
   - [RMQ and RUQ](DataStructures/SquareRootDecomposition/RMQandRUQ.cpp)
   - [RSQ and RAQ](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)
   - [Square Root Decomposition](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)
+- [Binary Heap](DataStructures/BinaryHeap.cpp)
 - [Binary Indexed Tree](DataStructures/BinaryIndexedTree.cpp)
 - [Compression](DataStructures/Compression.cpp)
 - [k-d Tree](DataStructures/KdTree.cpp)
+- [Leftist Heap](DataStructures/LeftistHeap.cpp)
 - [Treap](DataStructures/Treap.cpp)
 - [Union–Find](DataStructures/UnionFind.cpp)
 
