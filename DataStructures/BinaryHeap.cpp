@@ -1,7 +1,7 @@
 // Max Binary Heap
 // priority_queue の5倍くらい早い
 // http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2467391
-using Val = tuple<int, int>;
+using Val = tuple<int, int>; // 適宜変更
 const int MAX_N = 2000010;
 Val heap[MAX_N];
 int sz = 0;
@@ -33,4 +33,7 @@ const Val pop() {
 }
 const Val top() {
 	return heap[0];
+}
+const int size() {
+	return sz;
 }

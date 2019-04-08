@@ -11,19 +11,18 @@
 tuple<Weight, Edges, bool> kruskal(const Graph &g) {
 	int n = g.size();
 	UnionFind uf(n);
-	Edges es;
-	for (int i = 0; i < n; i++)
-		for (auto &e : g[i])
-			es.push_back(e);
+	Edges es = getEdges(g);
 	sort(es.begin(), es.end());
 	Weight total = 0;
 	Edges mst;
-	for (auto &e : es)
+	for (auto &e : es) {
 		if (!uf.same(e.s, e.d)) {
 			uf.unite(e.s, e.d);
 			mst.push_back(e);
 			total += e.w;
+			if (uf.size == 1)break;
 		}
+	}
 	return make_tuple(total, mst, uf.size == 1);
 }
 

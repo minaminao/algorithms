@@ -1,3 +1,8 @@
+// グラフ
+// 辺が同じかどうかは適宜書く
+// 多重辺を同じにするかどうか
+// (a,b,w) = (b,a,w) にするかどうか
+
 using Weight = int;
 struct Edge {
 	int s, d; Weight w;
