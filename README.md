@@ -91,6 +91,7 @@ GitHub 上で Jupyter Notebook のファイルが
 ## Linear Algebra / 線形代数学
 - [Gauss Elimination](LinearAlgebra/GaussElimination.cpp)
 - [Gauss Elimination Modulo A Prime](LinearAlgebra/GaussEliminationMod.cpp)
+- [Matrix](LinearAlgebra/Matrix.cpp)
 
 ## Machine Learning / 機械学習
 - [Least Squares](MachineLearning/LeastSquares.py)

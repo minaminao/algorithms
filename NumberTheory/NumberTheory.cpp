@@ -1,6 +1,6 @@
-// 累乗, power
-// 高速累乗 繰り返し自乗法
-// power((Int)a, k) のように使うこと
+// 累乗（power）
+// 高速累乗 繰り返し自乗法 バイナリ法
+// power((BigInt)a, k) のように使うこと
 // pow だと pow(int,int) が衝突する
 template<typename Int>
 Int power(Int a, unsigned long long k) {

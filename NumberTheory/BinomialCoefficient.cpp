@@ -6,12 +6,12 @@
 // O(k)
 // n が大きいときに有用
 mint binom(long long n, int k) {
-	mint ret = 1;
+	mint a = 1, b = 1;
 	for (int i = 0; i < k; i++) {
-		ret *= n - i;
-		ret /= i + 1;
+		a *= n - i;
+		b *= i + 1;
 	}
-	return ret;
+	return a / b;
 }
 
 // パスカルの三角形から計算
