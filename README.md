@@ -113,7 +113,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Prime Factorization](NumberTheory/PrimeFactorization.cpp)
 - [Quadratic Residue](NumberTheory/QuadraticResidue.cpp)
 - [Radix](NumberTheory/Radix.cpp)
-- [Sum Of Powers (Faulhaber's Formula)](NumberTheory/SumOfPowers.cpp)
+- [Sum Of Powers](NumberTheory/SumOfPowers.cpp)
 
 ## Numerical Analysis / 数値解析
 - [Bisection Method](NumericalAnalysis/BisectionMethod.cpp)
@@ -140,7 +140,8 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Insertion Sort](Sort/InsertionSort.cpp)
 - [Inversion Number](Sort/InversionNumber.cpp)
 - [Merge Sort](Sort/MergeSort.cpp)
-- [Minimum Numbers Of Swaps)(Sort/MinimumNumbersOfSwap.cpp)]
+- [Minimum Cost Sort](Sort/MinimumCostSort.cpp)
+- [Minimum Numbers Of Swaps](Sort/MinimumNumbersOfSwap.cpp)
 - [Quick Sort](Sort/QuickSort.cpp)
 - [Sort](Sort/Sort.cpp)
 
