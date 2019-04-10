@@ -49,6 +49,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Largest Rectangle](DynamicOptimization/LargestRectangle.cpp)
 - [Largest Square](DynamicOptimization/LargestSquare.cpp)
 - [Longest Increasing Subsequance](DynamicOptimization/LongestIncreasingSubsequence.cpp)
+- [Matrix Chain Multiplication](DynamicOptimization/MatrixChainMultiplication.cpp)
 - [Traveling Salesman Problem](DynamicOptimization/TravelingSalesmanProblem.cpp)
 
 ## Geometry / 幾何学
@@ -87,6 +88,9 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Minimum Spanning Tree](GraphTheory/MinimumSpanningTree.cpp)
 - [Strongly Connected Components](GraphTheory/StronglyConnectedComponents.cpp)
 - [Topological Sort](GraphTheory/TopologicalSort.cpp)
+
+## Greedy / 貪欲法
+- [Activity Selection Problem](Greedy/ActivitySelectionProblem.cpp)
 
 ## Linear Algebra / 線形代数学
 - [Gauss Elimination](LinearAlgebra/GaussElimination.cpp)
@@ -167,6 +171,7 @@ GitHub 上で Jupyter Notebook のファイルが
 ## Others / その他
 - Binary Search ([C++](Others/BinarySearch.cpp), [Python3](Others/BinarySearch.py))
 - [Gray Code](Others/GrayCode.py)
+- [Normal Distribution](Others/NormalDistribution.js)
 - [Number To String](Others/NumberToString.py)
 - [Number To Words](Others/NumberToWords.py)
 - [Others](Others/Others.cpp)
