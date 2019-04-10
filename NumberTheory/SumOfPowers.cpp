@@ -3,8 +3,12 @@
 #include "LagrangeInterpolation.cpp"
 // 冪乗和
 // ラグランジュ補間を用いる
-// Verified: https://yukicoder.me/submissions/336737
+// O(k (log m + log k))
+// Verified:
+//   http://codeforces.com/contest/622/submission/52552637
+//   https://yukicoder.me/submissions/336737
 mint sumOfPowers(long long n, int k) {
+	if (k == 0)return n;
 	vector<mint> y;
 	mint t = 0;
 	for (int x = 0; x <= k + 1; x++) {
@@ -19,7 +23,8 @@ mint sumOfPowers(long long n, int k) {
 // 1^k + 2^k + ... + n^k
 // ファウルハーバーの公式
 // O(k^2)
-// Verified: https://yukicoder.me/submissions/335474
+// Verified:
+//   https://yukicoder.me/submissions/335474
 mint sumOfPowers(long long n, int k) {
 	vector<mint> B = bernoulliNumbers(k);
 	mint sum = 0;

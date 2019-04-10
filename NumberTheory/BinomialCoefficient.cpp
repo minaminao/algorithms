@@ -3,8 +3,9 @@
 // 前計算 O(n) 計算 O(1) は Combinatorics.cpp を参照
 // 手元計算 O(n) 前計算 O(√n) 計算 O(√n) は Factorial.cpp を参照
 
-// O(r)
-mint binom(int n, int k) {
+// O(k)
+// n が大きいときに有用
+mint binom(long long n, int k) {
 	mint ret = 1;
 	for (int i = 0; i < k; i++) {
 		ret *= n - i;

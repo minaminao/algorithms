@@ -12,6 +12,7 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Combinatorics](Combinatorics/Combinatorics.cpp)
 - [Factorial](Combinatorics/Factorial.cpp)
 - [Inclusion–Exclusion Principle](Combinatorics/InclusionExclusionPrinciple.cpp)
+- [Montmort Numbers](Combinatorics/MontmortNumbers.cpp)
 - [Partition Numbers](Combinatorics/PartitionNumbers.cpp)
 - [Stirling Numbers](Combinatorics/StirlingNumbers.cpp)
 
@@ -118,7 +119,9 @@ GitHub 上で Jupyter Notebook のファイルが
 ## Numerical Analysis / 数値解析
 - [Bisection Method](NumericalAnalysis/BisectionMethod.cpp)
 - [Cubic Equation](NumericalAnalysis/CubicEquation.cpp)
+- [Lagrange Interpolation](NumericalAnalysis/LagrangeInterpolation.cpp)
 - [Numerical Analysis](NumericalAnalysis/NumericalAnalysis.cpp)
+- [Polynomial](NumericalAnalysis/Polynomial.cpp)
 - [Quadratic Equation](NumericalAnalysis/QuadraticEquation.cpp)
 
 ## Quantum / 量子アルゴリズム
