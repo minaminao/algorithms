@@ -1,16 +1,17 @@
 // 約数
 // 未ソート
 // O(√n), O(2^(b/2))
-vector<int> getDivisors(int x) {
-	vector<int> ret;
-	int i;
+template<typename Int>
+vector<Int> getDivisors(Int x) {
+	vector<Int> ret;
+	Int i;
 	for (i = 1; i*i < x; i++) {
 		if (x%i)continue;
-		ret.emplace_back(i);
-		ret.emplace_back(x / i);
+		ret.push_back(i);
+		ret.push_back(x / i);
 	}
 	if (i*i == x)
-		ret.emplace_back(i);
+		ret.push_back(i);
 	return ret;
 }
 

@@ -1,6 +1,6 @@
 # Algorithms and Data Structures
 
-C++, Python などによるアルゴリズムとデータ構造の実装・説明・スニペット。
+C++, Python などによるアルゴリズムとデータ構造の実装とスニペット。
 
 GitHub 上で Jupyter Notebook のファイルが
 
@@ -95,6 +95,7 @@ GitHub 上で Jupyter Notebook のファイルが
 ## Linear Algebra / 線形代数学
 - [Gauss Elimination](LinearAlgebra/GaussElimination.cpp)
 - [Gauss Elimination Modulo A Prime](LinearAlgebra/GaussEliminationMod.cpp)
+- [Gram–Schmidt Process](LinearAlgebra/GramSchmidtProcess.cpp)
 - [Matrix](LinearAlgebra/Matrix.cpp)
 
 ## Machine Learning / 機械学習

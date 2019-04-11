@@ -21,7 +21,7 @@ int lcm(const vector<int> &v) {
 
 // 非再帰
 // 多倍長整数用
-using Int = int;
+template<typename Int>
 Int gcd(Int x, Int y) {
 	while (y) {
 		Int t = x;
