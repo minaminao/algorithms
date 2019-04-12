@@ -1,12 +1,7 @@
 # Algorithms and Data Structures
+Implementations of algorithms and data structures, code snippets, etc.
 
-C++, Python などによるアルゴリズムとデータ構造の実装とスニペット。
-
-GitHub 上で Jupyter Notebook のファイルが
-
-> Sorry, something went wrong. Reload?
-
-となる場合は、[nbviewer](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/) で見れる。
+If you getting the message "Sorry, something went wrong. Reload?" when viewing a Jupyter notebook, try to see [nbviewer](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/).
 
 ## Combinatorics / 組合せ数学
 - [Combinatorics](Combinatorics/Combinatorics.cpp)
@@ -183,4 +178,5 @@ GitHub 上で Jupyter Notebook のファイルが
 - [Ternary Search](Others/TernarySearch.cpp)
 
 ## Debug / デバッグ用
-デバッグ用のコードとテンプレート
+
+Codes for debugging.

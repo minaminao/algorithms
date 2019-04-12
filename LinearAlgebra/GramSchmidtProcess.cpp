@@ -1,4 +1,12 @@
-// Gram–Schmidt の正規直交化法
+#include "bits/stdc++.h"
+using namespace std;
+#ifdef _DEBUG
+#include "dump.hpp"
+#else
+#define dump(...)
+#endif
+
+// Modified Gram–Schmidt Process
 // n次元のk個の独立なベクトルを正規直交化する
 // O(nk^2)
 using F = double;
@@ -21,20 +29,23 @@ vector<V> gramSchmidt(const vector<V> &v) {
 			a[j] /= p;
 	};
 
-	vector<V> u(K);
-	u[0] = v[0];
+	vector<V> u = v;
 	unitize(u[0]);
 
 	for (int i = 1; i < K; i++) {
-		u[i] = v[i];
 		for (int j = 0; j < i; j++) {
 			F p = projCoef(u[j], u[i]);
-			for (int k = 0; k < N; k++) {
+			for (int k = 0; k < N; k++)
 				u[i][k] = u[i][k] - p * u[j][k];
-			}
 		}
 		unitize(u[i]);
 	}
 
 	return u;
+}
+
+int main() {
+	dump(gramSchmidt(vector<V> { {3, 1}, { 2,2 }}));
+	dump(gramSchmidt(vector<V> { {1, 1, 0}, { 0,-1,1 }, { 1,1,1 }}));
+	return 0;
 }
