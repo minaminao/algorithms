@@ -153,7 +153,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Sort](Sort/Sort.cpp)
 
 ## String / 文字列アルゴリズム
-- [Distance](String/Distance.cpp)
+- Distance ([C++](String/Distance.cpp), [Python3](String/Distance.py))
 - [Fill](String/Fill.cpp)
 - [Manacher's Algorithm](String/Manacher.cpp)
 - [Morris–Pratt Algorithm](String/MorrisPratt.cpp)
