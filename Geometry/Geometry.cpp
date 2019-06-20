@@ -5,23 +5,19 @@ const double PI = acos(-1);
 #define next(P,i) P[(i+1)%P.size()]
 #define prev(P,i) P[(i+P.size()-1)%P.size()]
 
+// 点
 struct Point {
 	double x, y;
 	Point() :x(0.0), y(0.0) {}
 	Point(double x, double y) :x(x), y(y) {}
 
-	Point &operator+=(const Point &p) { x += p.x; y += p.y; return *this; }
-	Point &operator-=(const Point &p) { x -= p.x; y -= p.y; return *this; }
-	Point &operator*=(double a) { x *= a; y *= a; return *this; }
-	Point &operator/=(double a) { x /= a; y /= a; return *this; }
-
 	double abs() { return sqrt(norm()); }
 	double norm() { return x * x + y * y; }
 };
-Point operator+(const Point &p1, const Point &p2) { return Point(p1) += p2; }
-Point operator-(const Point &p1, const Point &p2) { return Point(p1) -= p2; }
-Point operator*(const Point &p, double a) { return Point(p) *= a; }
-Point operator/(const Point &p, double a) { return Point(p) /= a; }
+Point operator+(const Point &p1, const Point &p2) { return Point(p1.x + p2.x, p1.y + p2.y); }
+Point operator-(const Point &p1, const Point &p2) { return Point(p1.x - p2.x, p1.y - p2.y); }
+Point operator*(const Point &p, double a) { return Point(p.x * a, p.y * a); }
+Point operator/(const Point &p, double a) { return Point(p.x / a, p.y / a); }
 bool operator==(const Point &p1, const Point &p2) { return equals(p1.x, p2.x) && equals(p1.y, p2.y); }
 bool cmpx(const Point &p1, const Point &p2) {
 	return p1.x != p2.x ? p1.x < p2.x : p1.y < p2.y; // x昇順 -> y昇順
@@ -36,6 +32,7 @@ bool operator>(const Point &p1, const Point &p2) { return p2 < p1; }
 inline istream &operator >> (istream &is, Point &p) { double x, y; is >> x >> y; p = Point(x, y); return is; }
 inline ostream &operator << (ostream &os, const Point &p) { os << p.x << ' ' << p.y; return os; }
 
+// ベクトル
 struct Vector :public Point {
 	using Point::Point;
 	Vector() {}
@@ -49,12 +46,14 @@ double dot(Vector a, Vector b) { return a.x*b.x + a.y*b.y; }
 // 外積（cross product）の大きさ（正負あり）
 double cross(Vector a, Vector b) { return a.x*b.y - a.y*b.x; }
 
+// 直線
 struct Line {
 	Point p1, p2;
 	Line() {}
 	Line(Point p1, Point p2) :p1(p1), p2(p2) {}
 };
 
+// 線分
 struct Segment :public Line {
 	using Line::Line;
 	Segment() {}
@@ -63,12 +62,15 @@ struct Segment :public Line {
 };
 inline ostream &operator << (ostream &os, const Segment &s) { os << s.p1 << ' ' << s.p2; return os; }
 
+// 円
 struct Circle {
 	Point c; // center
 	double r; // radius
 	Circle() {}
 	Circle(Point c, double r) :c(c), r(r) {}
 };
+
+// 多角形
 using Polygon = vector<Point>;
 
 // degree to radian
@@ -325,8 +327,8 @@ double area(double a, double b, double c) {
 // 多角形の重心
 Point center(const Polygon &P) {
 	Point ret;
-	for (auto &p : P)ret += p;
-	ret /= P.size();
+	for (auto &p : P)ret = ret + p;
+	ret = ret / P.size();
 	return ret;
 }
 
