@@ -99,7 +99,7 @@ bool inrange(Point p, double x1, double y1, double x2, double y2) {
 bool is_orthogonal(Vector a, Vector b) { return equals(dot(a, b), 0.0); }
 bool is_orthogonal(Segment s1, Segment s2) { return equals(dot(s1.p2 - s1.p1, s2.p2 - s2.p1), 0.0); }
 
-// 平行判定
+// 平行判定（非交差判定）
 bool is_parallel(Vector a, Vector b) { return equals(cross(a, b), 0.0); }
 bool is_parallel(Segment s1, Segment s2) { return equals(cross(s1.p2 - s1.p1, s2.p2 - s2.p1), 0.0); }
 
@@ -130,7 +130,7 @@ int ccw(Vector a, Vector b) {
 	return ON_SEGMENT;
 }
 
-// 直線と直線の交差判定
+// 線分と線分の交差判定
 bool intersect(Segment a, Segment b) {
 	Point p1 = a.p1, p2 = a.p2, p3 = b.p1, p4 = b.p2;
 	return (ccw(p1, p2, p3)*ccw(p1, p2, p4) <= 0 &&
