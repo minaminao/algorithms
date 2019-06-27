@@ -8,6 +8,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Factorial](Combinatorics/Factorial.cpp)
 - [Inclusion–Exclusion Principle](Combinatorics/InclusionExclusionPrinciple.cpp)
 - [Montmort Numbers](Combinatorics/MontmortNumbers.cpp)
+- [Number of Subsequences](Combinatorics/NumberOfSubsequences.cpp)
 - [Partition Numbers](Combinatorics/PartitionNumbers.cpp)
 - [Stirling Numbers](Combinatorics/StirlingNumbers.cpp)
 
