@@ -147,10 +147,10 @@ bool intersect(Circle c, Line l) { return get_distance(l, c.c) <= c.r + EPS; }
 // 円と円の交差判定 共通接線の数
 int intersect(Circle c1, Circle c2) {
 	double d = get_distance(c1.c, c2.c);
-	if (d > c1.r + c2.r)return 4;
-	if (d == c1.r + c2.r)return 3;
-	if (d + c1.r == c2.r || d + c2.r == c1.r)return 1;
-	if (d + c1.r < c2.r || d + c2.r < c1.r)return 0;
+	if (d > c1.r + c2.r + EPS)return 4;
+	if (d > c1.r + c2.r - EPS)return 3;
+	if (equals(d + c1.r, c2.r) || equals(d + c2.r, c1.r))return 1;
+	if (d + c1.r - EPS < c2.r || d + c2.r - EPS < c1.r)return 0;
 	return 2;
 }
 
@@ -329,4 +329,50 @@ pair<Point, Point> get_tangent(const Circle &c, const Point &p) {
 	double d = get_distance(c.c, p);
 	Circle c2((c.c + p) / 2.0, d / 2.0);
 	return get_cross_points(c, c2);
+}
+
+// ある点を通る円の接線
+vector<Line> tangentLines(Circle c, Point p) {
+	Vector v = c.c - p;
+	double d = abs(v);
+	// 点が内部にある
+	if (d < c.r - EPS)
+		return {};
+	// 点が円周にある
+	else if (d < c.r + EPS) {
+		Point p2 = unit(rotate(v, PI / 2)) + p;
+		return { Line(p, p2) };
+	}
+	// 点が外部にある
+	else {
+		double alpha = asin(c.r / d);
+		double e = sqrt(d * d - c.r * c.r);
+		Point t1 = p + unit(rotate(v, alpha)) * e,
+			t2 = p + unit(rotate(v, -alpha)) * e;
+		return { Line(t1, p), Line(t2, p) };
+	}
+}
+
+// 円と円の共通接線
+vector<Line> tangentLines(Circle c1, Circle c2) {
+	int cnt = intersect(c1, c2);
+	vector<Line> ret;
+	if (cnt >= 3) {
+		Point m = (c2.r * c1.c + c1.r * c2.c) / (c1.r + c2.r);
+		vector<Line> l = tangentLines(c1, m);
+		ret.insert(ret.end(), l.begin(), l.end());
+	}
+	if (cnt >= 1) {
+		if (abs(c1.r - c2.r) < EPS) {
+			Vector v = unit(rotate(c1.c - c2.c, PI / 2));
+			ret.emplace_back(c1.c + v, c1.c - v);
+			ret.emplace_back(c2.c + v, c2.c - v);
+		}
+		else {
+			Point m = c1.c + (c1.c - c2.c) * c1.r / (c2.r - c1.r);
+			vector<Line> l = tangentLines(c1, m);
+			ret.insert(ret.end(), l.begin(), l.end());
+		}
+	}
+	return ret;
 }
