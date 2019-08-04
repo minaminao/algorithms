@@ -86,6 +86,77 @@ struct StaticKdTree {
 	}
 };
 
+// 点の個数を返す
+// クエリがO(√N) O(log N)でやりたいなら、BITとかセグ木とか使ったほうがいい
+struct StaticKdTree {
+	using It = vector<Point>::iterator;
+	int n;
+	vector<Point> ps;
+	vector<Point> tree;
+	StaticKdTree(const vector<Point> &ps) :n(ps.size()), ps(ps), tree(n) {
+		build(0, n, true);
+	}
+	//平均 O(nlogn)
+	void build(int l, int r, bool is_x_base) {
+		if (l >= r)return;
+		int m = (l + r) / 2;
+		It first = ps.begin() + l,
+			nth = ps.begin() + m,
+			last = ps.begin() + r;
+		//平均 O(r-l)
+		if (is_x_base)
+			nth_element(first, nth, last);
+		else
+			nth_element(first, nth, last, base_y);
+		tree[m] = *nth;
+		build(l, m, !is_x_base);
+		build(m + 1, r, !is_x_base);
+	}
+	bool inrange(const Point &p, int sx, int sy, int tx, int ty) {
+		return sx <= p.x&&p.x <= tx && sy <= p.y&&p.y <= ty;
+	}
+	// O(√n + k) (= O(n^{1-1/d} + k))
+	int query(int sx, int sy, int tx, int ty) {
+		return query(0, n, true, sx, sy, tx, ty);
+	}
+	int query(int l, int r, bool is_x_base, int sx, int sy, int tx, int ty) {
+		//dump(l, r, is_x_base, sx, sy, tx, ty);
+		if (l >= r)return 0;
+		int m = (l + r) / 2;
+		Point p = tree[m];
+		//dump(p);
+		int ret = 0;
+		if (is_x_base) {
+			if (tx < p.x) {
+				ret += query(l, m, !is_x_base, sx, sy, tx, ty);
+			}
+			else if (p.x < sx) {
+				ret += query(m + 1, r, !is_x_base, sx, sy, tx, ty);
+			}
+			else {
+				if (inrange(p, sx, sy, tx, ty))ret++;
+				ret += query(l, m, !is_x_base, sx, sy, tx, ty);
+				ret += query(m + 1, r, !is_x_base, sx, sy, tx, ty);
+			}
+		}
+		else {
+			if (ty < p.y) {
+				ret += query(l, m, !is_x_base, sx, sy, tx, ty);
+			}
+			else if (p.y < sy) {
+				ret += query(m + 1, r, !is_x_base, sx, sy, tx, ty);
+			}
+			else {
+				if (inrange(p, sx, sy, tx, ty))ret++;
+				ret += query(l, m, !is_x_base, sx, sy, tx, ty);
+				ret += query(m + 1, r, !is_x_base, sx, sy, tx, ty);
+			}
+		}
+		return ret;
+	}
+};
+
+
 //http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=2237631
 //静的 2-d tree
 //領域内の点のインデックスを返す
