@@ -1,5 +1,5 @@
 #include "Graph.cpp"
-#include "BFS.cpp"
+#include "ShortestPath/BFS.cpp"
 
 // 木の直径
 // O(E)
