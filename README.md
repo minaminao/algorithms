@@ -31,7 +31,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
   - [RSQ and RAQ](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)
   - [Square Root Decomposition](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)
 - [Binary Heap](DataStructures/BinaryHeap.cpp)
-- [Binary Indexed Tree](DataStructures/BinaryIndexedTree.cpp)
+- Binary Indexed Tree ([C++](DataStructures/BinaryIndexedTree.cpp), [Rust](DataStructures/BinaryIndexedTree.rs))
 - [Compression](DataStructures/Compression.cpp)
 - [k-d Tree](DataStructures/KdTree.cpp)
 - [Leftist Heap](DataStructures/LeftistHeap.cpp)

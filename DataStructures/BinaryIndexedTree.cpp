@@ -12,7 +12,7 @@ struct BinaryIndexedTree {
 		for (; i <= n; i += i & -i)
 			v[i] = v[i] + x;
 	}
-	// [1, i]
+	// [0, i]
 	T sum(int i) {
 		T ret = 0;
 		for (; i > 0; i -= i & -i)
