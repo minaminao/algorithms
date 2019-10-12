@@ -36,7 +36,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [k-d Tree](DataStructures/KdTree.cpp)
 - [Leftist Heap](DataStructures/LeftistHeap.cpp)
 - [Treap](DataStructures/Treap.cpp)
-- [Union–Find](DataStructures/UnionFind.cpp)
+- Union–Find ([C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs))
 
 ## Dynamic Optimization / 動的最適化
 - [Digit DP](DynamicOptimization/DigitDP.cpp)
@@ -105,7 +105,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - Extended Euclidean Algorithm ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py))
 - [Euler's Totient Function](NumberTheory/EulerTotientFunction.cpp)
 - [GCD, LCM](NumberTheory/ExtendedGCD_Inverse.cpp)
-- Inverse Element ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py))
+- Inverse Element ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Rust](NumberTheory/GCD_LCM.rs), [Python3](NumberTheory/Inverse.py))
 - [Legendre's Formula](NumberTheory/LegendreFormula.cpp)
 - [Log Factorial (Stirling's Approximation)](NumberTheory/LogFactorial.cpp)
 - [ModInt](NumberTheory/ModInt.cpp)
