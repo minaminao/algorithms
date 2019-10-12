@@ -5,7 +5,7 @@
 bool detectCycle(const Graph &g, int s = 0) {
 	int n = g.size();
 	vector<bool> vis(n);
-	function<int(int, int)> dfs = [&](int u, int p) {
+	function<bool(int, int)> dfs = [&](int u, int p) {
 		bool ret = false;
 		vis[u] = true;
 		for (auto e : g[u]) {
@@ -26,7 +26,7 @@ bool detectCycle(const Graph &g) {
 	int n = g.size();
 	vector<bool> path(n);
 	vector<bool> vis(n);
-	function<int(int)> dfs = [&](int u) {
+	function<bool(int)> dfs = [&](int u) {
 		bool ret = false;
 		path[u] = true;
 		for (auto e : g[u]) {

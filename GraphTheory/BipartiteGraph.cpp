@@ -1,7 +1,7 @@
 #include "Graph.cpp"
 
 // 2部グラフかどうか判定
-// not verified
+// Verified: https://atcoder.jp/contests/agc039/submissions/7881926
 bool isBipartiteGraph(const Graph &g) {
 	auto bfs = [&](const Graph &g, int s, Array &dist) {
 		int n = g.size();

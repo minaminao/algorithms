@@ -76,6 +76,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Bipartite Graph](GraphTheory/BipartiteGraph.cpp)
 - [Chromatic Polynomial](GraphTheory/ChromaticPolynomial.cpp)
 - [Cycle Detection](GraphTheory/CycleDetection.cpp)
+- [Diameter](GraphTheory/Diameter.cpp)
 - [DFS](GraphTheory/DFS.cpp)
 - [Eulerian Path](GraphTheory/EulerianPath.cpp)
 - [Graph](GraphTheory/Graph.cpp)
