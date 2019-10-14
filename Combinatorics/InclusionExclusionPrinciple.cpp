@@ -4,7 +4,8 @@
 #include "GCD_LCM.cpp"
 #include "PopCount.cpp"
 
-// 1以上n以下の整数で集合aの要素の倍数になるものの個数
+// 1以上n以下の整数のうち、集合aの少なくとも1つの要素の倍数である（割り切れるもの）の個数
+// Verified: https://yukicoder.me/submissions/329371
 int numberOfMultiples(int n, vector<int> a) {
 	int ret = 0;
 	int m = a.size();
