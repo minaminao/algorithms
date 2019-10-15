@@ -6,7 +6,7 @@ struct SparseTable {
 	vector<int> a;
 	vector<vector<int>> mini;
 	vector<int> lg;
-    // O(n log n)
+	// O(n log n)
 	SparseTable(const vector<int> &a) :a(a), n(a.size()), lg(n + 1), lg_n(log2(n) + 1), mini(lg_n, vector<int>(n)) {
 		for (int i = 2; i <= n; i++)
 			lg[i] = lg[i >> 1] + 1;
