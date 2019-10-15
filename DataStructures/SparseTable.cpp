@@ -2,7 +2,6 @@
 struct SparseTable {
 	int n;
 	int lg_n;
-	int p;
 	vector<int> a;
 	vector<vector<int>> mini;
 	vector<int> lg;
