@@ -35,6 +35,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Compression](DataStructures/Compression.cpp)
 - [k-d Tree](DataStructures/KdTree.cpp)
 - [Leftist Heap](DataStructures/LeftistHeap.cpp)
+- [Sparse Table](DataStructures/SparseTable.cpp)
 - [Treap](DataStructures/Treap.cpp)
 - Union–Find ([C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs))
 
