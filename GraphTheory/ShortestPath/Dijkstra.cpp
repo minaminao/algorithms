@@ -51,3 +51,47 @@ auto dijkstra = [&](const Graph &g, int s, Array &dist) {
 	}
 	return prev;
 };
+
+// MLEを避けるために遷移を後から追加するDijkstra法
+auto dijkstra = [&](Graph &g, int s, Array &dist) {
+	int n = g.size();
+	vector<bool> vis(n);
+	vector<int> prev(n, -1);
+	dist.assign(n, INF);
+	dist[s] = 0;
+	using State = tuple<Weight, int, int>;
+	priority_queue<State, vector<State>, greater<State>> pq;
+	pq.emplace(0, s, -1);
+	while (pq.size()) {
+		Weight d;
+		int v, p;
+		tie(d, v, p) = pq.top();
+		pq.pop();
+		if (dist[v] < d) continue;
+		vis[v] = true;
+		prev[v] = p;
+
+		// To avoid MLE, add transitions
+		assert(g[v].size() == 0);
+		int i = v / W, j = v % W;
+		rep(d, 0, 4) {
+			int ni = i + di[d], nj = j + dj[d];
+			if (ni < 0 || ni >= H || nj < 0 || nj >= W) continue;
+			if (V[ni][nj] == '#') {
+				addArc(g, idx(i, j), idx(ni, nj), 1);
+			}
+			else {
+				addArc(g, idx(i, j), idx(ni, nj), 0);
+			}
+		}
+
+		for (auto &e : g[v]) {
+			if (vis[e.d]) continue;
+			if (dist[e.d] > dist[v] + e.w) {
+				dist[e.d] = dist[v] + e.w;
+				pq.emplace(dist[e.d], e.d, v);
+			}
+		}
+	}
+	return prev;
+};
