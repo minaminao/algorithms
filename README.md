@@ -170,6 +170,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 ## Others / その他
 - Binary Search ([C++](Others/BinarySearch.cpp), [Python3](Others/BinarySearch.py))
 - [Gray Code](Others/GrayCode.py)
+- [Interactive Problem](Others/InteractiveProblem.cpp)
 - [Normal Distribution](Others/NormalDistribution.js)
 - [Number To String](Others/NumberToString.py)
 - [Number To Words](Others/NumberToWords.py)
