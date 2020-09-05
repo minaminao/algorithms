@@ -1,8 +1,8 @@
 #include "Geometry.cpp"
 
 // 最小包含球 山登り法
-// 2次 https://en.wikipedia.org/wiki/Smallest-circle_problem
-// k次 https://en.wikipedia.org/wiki/Bounding_sphere
+// 2次: https://en.wikipedia.org/wiki/Smallest-circle_problem
+// k次: https://en.wikipedia.org/wiki/Bounding_sphere
 // O(N)やO(N^4)解法がある
 // k次のPointを実装すればk次に適用可能
 void boundingSphere() {
