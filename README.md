@@ -1,9 +1,9 @@
 # Algorithms and Data Structures
-Implementations of algorithms and data structures, code snippets, etc.
+Implementations of algorithms and data structures, code snippets, etc. These algorithms and data structures can be used for everyday programming and competitive programming.
 
 If you getting the message "Sorry, something went wrong. Reload?" when viewing a Jupyter notebook, try to see [nbviewer](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/).
 
-## Combinatorics / 組合せ数学
+## Combinatorics
 - [Combinatorics](Combinatorics/Combinatorics.cpp)
 - [Factorial](Combinatorics/Factorial.cpp)
 - [Inclusion–Exclusion Principle](Combinatorics/InclusionExclusionPrinciple.cpp)
@@ -12,12 +12,12 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Partition Numbers](Combinatorics/PartitionNumbers.cpp)
 - [Stirling Numbers](Combinatorics/StirlingNumbers.cpp)
 
-## Cryptography / 暗号理論
+## Cryptography 
+- *These implementations are not secure.*
 - [ElGamal](Cryptography/ElGamal.ipynb)
 - [RSA](Cryptography/RSA.ipynb)
-- These implementations are not secure.
 
-## Data Structures / データ構造
+## Data Structures 
 - [Segment Tree](DataStructures/SegmentTree)
   - [Range Add Query](DataStructures/SegmentTree/RangeAddQuery.cpp)
   - [Range Minimum Query](DataStructures/SegmentTree/RangeMinimumQuery.cpp)
@@ -39,7 +39,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Treap](DataStructures/Treap.cpp)
 - Union–Find ([C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs))
 
-## Dynamic Optimization / 動的最適化
+## Dynamic Optimization
 - [Digit DP](DynamicOptimization/DigitDP.cpp)
 - [Dynamic Optimization](DynamicOptimization/DynamicOptimization.cpp)
 - [Game Theory](DynamicOptimization/GameTheory.cpp)
@@ -49,13 +49,13 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Matrix Chain Multiplication](DynamicOptimization/MatrixChainMultiplication.cpp)
 - [Traveling Salesman Problem](DynamicOptimization/TravelingSalesmanProblem.cpp)
 
-## Geometry / 幾何学
+## Geometry
 - [Bounding Sphere](Geometry/BoundingSphere.cpp)
 - [Geometry](Geometry/Geometry.cpp)
 - [Geometry 3D](Geometry/Geometry3D.cpp)
 - [Minimum-Weight Triangulation](Geometry/MinimumWeightTriangulation.cpp)
 
-## Graph Theory / グラフ理論
+## Graph Theory 
 - [Matching](GraphTheory/Matching)
   - [Bipartite Matching](GraphTheory/Matching/BipartiteMatching.cpp)
   - [Hopcroft–Karp Algorithm](GraphTheory/Matching/HopcroftKarp.cpp)
@@ -87,19 +87,19 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Strongly Connected Components](GraphTheory/StronglyConnectedComponents.cpp)
 - [Topological Sort](GraphTheory/TopologicalSort.cpp)
 
-## Greedy / 貪欲法
+## Greedy 
 - [Activity Selection Problem](Greedy/ActivitySelectionProblem.cpp)
 
-## Linear Algebra / 線形代数学
+## Linear Algebra 
 - [Gauss Elimination](LinearAlgebra/GaussElimination.cpp)
 - [Gauss Elimination Modulo A Prime](LinearAlgebra/GaussEliminationMod.cpp)
 - [Gram–Schmidt Process](LinearAlgebra/GramSchmidtProcess.cpp)
 - [Matrix](LinearAlgebra/Matrix.cpp)
 
-## Machine Learning / 機械学習
+## Machine Learning 
 - [Least Squares](MachineLearning/LeastSquares.py)
 
-## Number Theory / 数論
+## Number Theory 
 - [Bernoulli Numbers](NumberTheory/BernoulliNumbers.cpp)
 - [Binomial Coefficient](NumberTheory/BinomialCoefficient.cpp)
 - Chinese Remainder Theorem ([C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py))
@@ -121,14 +121,14 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Radix](NumberTheory/Radix.cpp)
 - [Sum Of Powers](NumberTheory/SumOfPowers.cpp)
 
-## Numerical Analysis / 数値解析
+## Numerical Analysis
 - [Bisection Method](NumericalAnalysis/BisectionMethod.cpp)
 - [Cubic Equation](NumericalAnalysis/CubicEquation.cpp)
 - [Lagrange Interpolation](NumericalAnalysis/LagrangeInterpolation.cpp)
 - [Numerical Analysis](NumericalAnalysis/NumericalAnalysis.cpp)
 - [Quadratic Equation](NumericalAnalysis/QuadraticEquation.cpp)
 
-## Quantum / 量子アルゴリズム
+## Quantum 
 - [Adder](Quantum/Adder.ipynb)
 - [Bell State](Quantum/BellState.ipynb)
 - [Bernstein–Vazirani Algorithm](Quantum/BernsteinVazirani.ipynb)
@@ -141,10 +141,10 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Plus State, Minus State](Quantum/PlusState_MinusState.ipynb)
 - [Simon's Algorithm](Quantum/Simon.ipynb)
 
-## Signal Processing / 信号処理
+## Signal Processing
 - [Fast Fourier Transform](SignalProcessing/FastFourierTransform.cpp)
 
-## Sort / ソートアルゴリズム
+## Sort
 - [Bubble Sort](Sort/BubbleSort.cpp)
 - [Counting Sort](Sort/CountingSort.cpp)
 - [Insertion Sort](Sort/InsertionSort.cpp)
@@ -155,7 +155,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Quick Sort](Sort/QuickSort.cpp)
 - [Sort](Sort/Sort.cpp)
 
-## String / 文字列アルゴリズム
+## String 
 - Distance ([C++](String/Distance.cpp), [Python3](String/Distance.py))
 - [Fill](String/Fill.cpp)
 - [Manacher's Algorithm](String/Manacher.cpp)
@@ -167,7 +167,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Suffix Array](String/SuffixArray.cpp)
 - [Z Algorithm](String/ZAlgorithm.cpp)
 
-## Others / その他
+## Others
 - Binary Search ([C++](Others/BinarySearch.cpp), [Python3](Others/BinarySearch.py))
 - [Gray Code](Others/GrayCode.py)
 - [Interactive Problem](Others/InteractiveProblem.cpp)
@@ -181,6 +181,3 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 - [Sum](Others/Sum.cpp)
 - [Ternary Search](Others/TernarySearch.cpp)
 
-## Debug / デバッグ用
-
-Codes for debugging.
