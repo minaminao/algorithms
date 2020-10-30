@@ -160,6 +160,16 @@ int intersect(Circle c1, Circle c2) {
 	return 2;
 }
 
+// 直線と直線の交点
+// Verified: http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=4968506
+Point get_cross_point(Line a, Line b) {
+	assert(intersect(a, b));
+	Vector va = a.p2 - a.p1;
+	Vector vb = b.p2 - b.p1;
+	Vector vc = b.p1 - a.p1;
+	return a.p1 + va * cross(vb, vc) / cross(vb, va);
+}
+
 // 線分と線分の交点
 Point get_cross_point(Segment a, Segment b) {
 	assert(intersect(a, b));
