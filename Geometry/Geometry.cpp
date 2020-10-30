@@ -111,6 +111,12 @@ int ccw(Vector a, Vector b) {
 	return ON_SEGMENT;
 }
 
+// 直線と直線の交差判定
+// Verified: http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=4968506
+bool intersect(Line a, Line b) {
+	return !equals(cross(a.p2 - a.p1, b.p2 - b.p1), 0.0);
+}
+
 // 線分と線分の交差判定
 bool intersect(Segment a, Segment b) {
 	Point p1 = a.p1, p2 = a.p2, p3 = b.p1, p4 = b.p2;
