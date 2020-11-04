@@ -111,6 +111,12 @@ int ccw(Vector a, Vector b) {
 	return ON_SEGMENT;
 }
 
+// 直線と直線の交差判定
+// Verified: http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=4968506
+bool intersect(Line a, Line b) {
+	return !equals(cross(a.p2 - a.p1, b.p2 - b.p1), 0.0);
+}
+
 // 線分と線分の交差判定
 bool intersect(Segment a, Segment b) {
 	Point p1 = a.p1, p2 = a.p2, p3 = b.p1, p4 = b.p2;
@@ -152,6 +158,16 @@ int intersect(Circle c1, Circle c2) {
 	if (equals(d + c1.r, c2.r) || equals(d + c2.r, c1.r))return 1;
 	if (d + c1.r - EPS < c2.r || d + c2.r - EPS < c1.r)return 0;
 	return 2;
+}
+
+// 直線と直線の交点
+// Verified: http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=4968506
+Point get_cross_point(Line a, Line b) {
+	assert(intersect(a, b));
+	Vector va = a.p2 - a.p1;
+	Vector vb = b.p2 - b.p1;
+	Vector vc = b.p1 - a.p1;
+	return a.p1 + va * cross(vb, vc) / cross(vb, va);
 }
 
 // 線分と線分の交点
