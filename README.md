@@ -1,183 +1,216 @@
 # Algorithms and Data Structures
 Implementations of algorithms and data structures, code snippets, etc. These algorithms and data structures can be used for everyday programming and competitive programming.
+The implementation of the algorithms in Rust language has been moved to [minaminao/algo-rs](https://github.com/minaminao/algo-rs).
 
-If you getting the message "Sorry, something went wrong. Reload?" when viewing a Jupyter notebook, try to see [nbviewer](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/).
+If you getting the message "Sorry, something went wrong. Reload?" when viewing a Jupyter notebook, try to see [nbviewer|[C++](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/)||.
 
 ## Combinatorics
-- [Combinatorics](Combinatorics/Combinatorics.cpp)
-- [Factorial](Combinatorics/Factorial.cpp)
-- [Inclusion–Exclusion Principle](Combinatorics/InclusionExclusionPrinciple.cpp)
-- [Montmort Numbers](Combinatorics/MontmortNumbers.cpp)
-- [Number of Subsequences](Combinatorics/NumberOfSubsequences.cpp)
-- [Partition Numbers](Combinatorics/PartitionNumbers.cpp)
-- [Stirling Numbers](Combinatorics/StirlingNumbers.cpp)
+| Algorithm                     | Implementation                                       | Note |
+| ----------------------------- | ---------------------------------------------------- | ---- |
+| Combinatorics                 | [C++](Combinatorics/Combinatorics.cpp)               |      |
+| Factorial                     | [C++](Combinatorics/Factorial.cpp)                   |      |
+| Inclusion–Exclusion Principle | [C++](Combinatorics/InclusionExclusionPrinciple.cpp) |      |
+| Montmort Numbers              | [C++](Combinatorics/MontmortNumbers.cpp)             |      |
+| Number of Subsequences        | [C++](Combinatorics/NumberOfSubsequences.cpp)        |      |
+| Partition Numbers             | [C++](Combinatorics/PartitionNumbers.cpp)            |      |
+| Stirling Numbers              | [C++](Combinatorics/StirlingNumbers.cpp)             |      |
 
 ## Cryptography 
 - *These implementations are not secure.*
-- [ElGamal](Cryptography/ElGamal.ipynb)
-- [RSA](Cryptography/RSA.ipynb)
+| Algorithm | Implementation                    | Note |
+| --------- | --------------------------------- | ---- |
+| ElGamal   | [C++](Cryptography/ElGamal.ipynb) |      |
+| RSA       | [C++](Cryptography/RSA.ipynb)     |      |
 
 ## Data Structures 
-- [Segment Tree](DataStructures/SegmentTree)
-  - [Range Add Query](DataStructures/SegmentTree/RangeAddQuery.cpp)
-  - [Range Minimum Query](DataStructures/SegmentTree/RangeMinimumQuery.cpp)
-  - [Range Update Query](DataStructures/SegmentTree/RangeUpdateQuery.cpp)
-- [Square Root Decomposition](DataStructures/SquareRootDecomposition)
-  - [Range Add Query](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)
-  - [Range Minimum Query](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)
-  - [Range Sum Query](DataStructures/SquareRootDecomposition/RangeSumQuery.cpp)
-  - [Range Update Query](DataStructures/SquareRootDecomposition/RangeUpdateQuery.cpp)
-  - [RMQ and RUQ](DataStructures/SquareRootDecomposition/RMQandRUQ.cpp)
-  - [RSQ and RAQ](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)
-  - [Square Root Decomposition](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)
-- [Binary Heap](DataStructures/BinaryHeap.cpp)
-- Binary Indexed Tree ([C++](DataStructures/BinaryIndexedTree.cpp), [Rust](DataStructures/BinaryIndexedTree.rs))
-- [Compression](DataStructures/Compression.cpp)
-- [k-d Tree](DataStructures/KdTree.cpp)
-- [Leftist Heap](DataStructures/LeftistHeap.cpp)
-- [Sparse Table](DataStructures/SparseTable.cpp)
-- [Treap](DataStructures/Treap.cpp)
-- Union–Find ([C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs))
+| Algorithm                   | Implementation                                                                           | Note |
+| --------------------------- | ---------------------------------------------------------------------------------------- | ---- |
+| Segment Tree                | [C++](DataStructures/SegmentTree)                                                        |      |
+| - Range Add Query           | [C++](DataStructures/SegmentTree/RangeAddQuery.cpp)                                      |      |
+| - Range Minimum Query       | [C++](DataStructures/SegmentTree/RangeMinimumQuery.cpp)                                  |      |
+| - Range Update Query        | [C++](DataStructures/SegmentTree/RangeUpdateQuery.cpp)                                   |      |
+| Square Root Decomposition   | [C++](DataStructures/SquareRootDecomposition)                                            |      |
+| - Range Add Query           | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                          |      |
+| - Range Minimum Query       | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                          |      |
+| - Range Sum Query           | [C++](DataStructures/SquareRootDecomposition/RangeSumQuery.cpp)                          |      |
+| - Range Update Query        | [C++](DataStructures/SquareRootDecomposition/RangeUpdateQuery.cpp)                       |      |
+| - RMQ and RUQ               | [C++](DataStructures/SquareRootDecomposition/RMQandRUQ.cpp)                              |      |
+| - RSQ and RAQ               | [C++](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)                              |      |
+| - Square Root Decomposition | [C++](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)                |      |
+| Binary Heap                 | [C++](DataStructures/BinaryHeap.cpp)                                                     |      |
+| - Binary Indexed Tree       | [C++](DataStructures/BinaryIndexedTree.cpp), [Rust](DataStructures/BinaryIndexedTree.rs) |      |
+| Compression                 | [C++](DataStructures/Compression.cpp)                                                    |      |
+| k-d Tree                    | [C++](DataStructures/KdTree.cpp)                                                         |      |
+| Leftist Heap                | [C++](DataStructures/LeftistHeap.cpp)                                                    |      |
+| Sparse Table                | [C++](DataStructures/SparseTable.cpp)                                                    |      |
+| Treap                       | [C++](DataStructures/Treap.cpp)                                                          |      |
+| - Union–Find                | [C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs)                 |      |
 
 ## Dynamic Optimization
-- [Digit DP](DynamicOptimization/DigitDP.cpp)
-- [Dynamic Optimization](DynamicOptimization/DynamicOptimization.cpp)
-- [Game Theory](DynamicOptimization/GameTheory.cpp)
-- [Largest Rectangle](DynamicOptimization/LargestRectangle.cpp)
-- [Largest Square](DynamicOptimization/LargestSquare.cpp)
-- [Longest Increasing Subsequance](DynamicOptimization/LongestIncreasingSubsequence.cpp)
-- [Matrix Chain Multiplication](DynamicOptimization/MatrixChainMultiplication.cpp)
-- [Traveling Salesman Problem](DynamicOptimization/TravelingSalesmanProblem.cpp)
+| Algorithm                      | Implementation                                              | Note |
+| ------------------------------ | ----------------------------------------------------------- | ---- |
+| Digit DP                       | [C++](DynamicOptimization/DigitDP.cpp)                      |      |
+| Dynamic Optimization           | [C++](DynamicOptimization/DynamicOptimization.cpp)          |      |
+| Game Theory                    | [C++](DynamicOptimization/GameTheory.cpp)                   |      |
+| Largest Rectangle              | [C++](DynamicOptimization/LargestRectangle.cpp)             |      |
+| Largest Square                 | [C++](DynamicOptimization/LargestSquare.cpp)                |      |
+| Longest Increasing Subsequance | [C++](DynamicOptimization/LongestIncreasingSubsequence.cpp) |      |
+| Matrix Chain Multiplication    | [C++](DynamicOptimization/MatrixChainMultiplication.cpp)    |      |
+| Traveling Salesman Problem     | [C++](DynamicOptimization/TravelingSalesmanProblem.cpp)     |      |
 
 ## Geometry
-- [Bounding Sphere](Geometry/BoundingSphere.cpp)
-- [Geometry](Geometry/Geometry.cpp)
-- [Geometry 3D](Geometry/Geometry3D.cpp)
-- [Minimum-Weight Triangulation](Geometry/MinimumWeightTriangulation.cpp)
+| Algorithm                    | Implementation                                 | Note |
+| ---------------------------- | ---------------------------------------------- | ---- |
+| Bounding Sphere              | [C++](Geometry/BoundingSphere.cpp)             |      |
+| Geometry                     | [C++](Geometry/Geometry.cpp)                   |      |
+| Geometry 3D                  | [C++](Geometry/Geometry3D.cpp)                 |      |
+| Minimum-Weight Triangulation | [C++](Geometry/MinimumWeightTriangulation.cpp) |      |
 
 ## Graph Theory 
-- [Matching](GraphTheory/Matching)
-  - [Bipartite Matching](GraphTheory/Matching/BipartiteMatching.cpp)
-  - [Hopcroft–Karp Algorithm](GraphTheory/Matching/HopcroftKarp.cpp)
-  - [Lexicographically Bipartite Matching](GraphTheory/Matching/LexicographicallyBipartiteMatching.cpp)
-  - [Stable Matching](GraphTheory/Matching/StableMatching.cpp)
-- [Shortest Path](GraphTheory/ShortestPath)
-  - [0-1 BFS](GraphTheory/ShortestPath/0-1BFS.cpp)
-  - [All Pairs Shortest Paths](GraphTheory/ShortestPath/AllPairsShortestPaths.cpp)
-  - [BFS](GraphTheory/ShortestPath/BFS.cpp)
-  - [Bellman–Ford Algorithm](GraphTheory/ShortestPath/BellmanFord.cpp)
-  - [Build DAG](GraphTheory/ShortestPath/BuilldDAG.cpp)
-  - [Dijkstra's Algorithm](GraphTheory/ShortestPath/Dijkstra.cpp)
-  - [Get Path](GraphTheory/ShortestPath/GetPath.cpp)
-- [Tree](GraphTheory/Tree)
-  - [Lowest Common Ancestors](GraphTheory/Tree/LowestCommonAncestors.cpp)
-  - [Tree](GraphTheory/Tree/Tree.cpp)
-- [All Pairs Widest Paths](GraphTheory/AllPairsWidestPaths.cpp)
-- [BFS](GraphTheory/BFS.cpp)
-- [Bipartite Graph](GraphTheory/BipartiteGraph.cpp)
-- [Chromatic Polynomial](GraphTheory/ChromaticPolynomial.cpp)
-- [Cycle Detection](GraphTheory/CycleDetection.cpp)
-- [Diameter](GraphTheory/Diameter.cpp)
-- [DFS](GraphTheory/DFS.cpp)
-- [Eulerian Path](GraphTheory/EulerianPath.cpp)
-- [Graph](GraphTheory/Graph.cpp)
-- [Low-link](GraphTheory/LowLink.cpp)
-- [Minimum Spanning Arborescence](GraphTheory/MinimumSpanningArborescence.cpp)
-- [Minimum Spanning Tree](GraphTheory/MinimumSpanningTree.cpp)
-- [Strongly Connected Components](GraphTheory/StronglyConnectedComponents.cpp)
-- [Topological Sort](GraphTheory/TopologicalSort.cpp)
+| Algorithm                              | Implementation                                                     | Note |
+| -------------------------------------- | ------------------------------------------------------------------ | ---- |
+| Matching                               | [C++](GraphTheory/Matching)                                        |      |
+| - Bipartite Matching                   | [C++](GraphTheory/Matching/BipartiteMatching.cpp)                  |      |
+| - Hopcroft–Karp Algorithm              | [C++](GraphTheory/Matching/HopcroftKarp.cpp)                       |      |
+| - Lexicographically Bipartite Matching | [C++](GraphTheory/Matching/LexicographicallyBipartiteMatching.cpp) |      |
+| - Stable Matching                      | [C++](GraphTheory/Matching/StableMatching.cpp)                     |      |
+| Shortest Path                          | [C++](GraphTheory/ShortestPath)                                    |      |
+| - 0-1 BFS                              | [C++](GraphTheory/ShortestPath/0-1BFS.cpp)                         |      |
+| - All Pairs Shortest Paths             | [C++](GraphTheory/ShortestPath/AllPairsShortestPaths.cpp)          |      |
+| - BFS                                  | [C++](GraphTheory/ShortestPath/BFS.cpp)                            |      |
+| - Bellman–Ford Algorithm               | [C++](GraphTheory/ShortestPath/BellmanFord.cpp)                    |      |
+| - Build DAG                            | [C++](GraphTheory/ShortestPath/BuilldDAG.cpp)                      |      |
+| - Dijkstra's Algorithm                 | [C++](GraphTheory/ShortestPath/Dijkstra.cpp)                       |      |
+| - Get Path                             | [C++](GraphTheory/ShortestPath/GetPath.cpp)                        |      |
+| Tree                                   | [C++](GraphTheory/Tree)                                            |      |
+| - Lowest Common Ancestors              | [C++](GraphTheory/Tree/LowestCommonAncestors.cpp)                  |      |
+| - Tree                                 | [C++](GraphTheory/Tree/Tree.cpp)                                   |      |
+| All Pairs Widest Paths                 | [C++](GraphTheory/AllPairsWidestPaths.cpp)                         |      |
+| BFS                                    | [C++](GraphTheory/BFS.cpp)                                         |      |
+| Bipartite Graph                        | [C++](GraphTheory/BipartiteGraph.cpp)                              |      |
+| Chromatic Polynomial                   | [C++](GraphTheory/ChromaticPolynomial.cpp)                         |      |
+| Cycle Detection                        | [C++](GraphTheory/CycleDetection.cpp)                              |      |
+| Diameter                               | [C++](GraphTheory/Diameter.cpp)                                    |      |
+| DFS                                    | [C++](GraphTheory/DFS.cpp)                                         |      |
+| Eulerian Path                          | [C++](GraphTheory/EulerianPath.cpp)                                |      |
+| Graph                                  | [C++](GraphTheory/Graph.cpp)                                       |      |
+| Low-link                               | [C++](GraphTheory/LowLink.cpp)                                     |      |
+| Minimum Spanning Arborescence          | [C++](GraphTheory/MinimumSpanningArborescence.cpp)                 |      |
+| Minimum Spanning Tree                  | [C++](GraphTheory/MinimumSpanningTree.cpp)                         |      |
+| Strongly Connected Components          | [C++](GraphTheory/StronglyConnectedComponents.cpp)                 |      |
+| Topological Sort                       | [C++](GraphTheory/TopologicalSort.cpp)                             |      |
 
 ## Greedy 
-- [Activity Selection Problem](Greedy/ActivitySelectionProblem.cpp)
+| Algorithm                  | Implementation                             | Note |
+| -------------------------- | ------------------------------------------ | ---- |
+| Activity Selection Problem | [C++](Greedy/ActivitySelectionProblem.cpp) |      |
 
 ## Linear Algebra 
-- [Gauss Elimination](LinearAlgebra/GaussElimination.cpp)
-- [Gauss Elimination Modulo A Prime](LinearAlgebra/GaussEliminationMod.cpp)
-- [Gram–Schmidt Process](LinearAlgebra/GramSchmidtProcess.cpp)
-- [Matrix](LinearAlgebra/Matrix.cpp)
+| Algorithm                        | Implementation                               | Note |
+| -------------------------------- | -------------------------------------------- | ---- |
+| Gauss Elimination                | [C++](LinearAlgebra/GaussElimination.cpp)    |      |
+| Gauss Elimination Modulo A Prime | [C++](LinearAlgebra/GaussEliminationMod.cpp) |      |
+| Gram–Schmidt Process             | [C++](LinearAlgebra/GramSchmidtProcess.cpp)  |      |
+| Matrix                           | [C++](LinearAlgebra/Matrix.cpp)              |      |
 
 ## Machine Learning 
-- [Least Squares](MachineLearning/LeastSquares.py)
+| Algorithm     | Implementation                         | Note |
+| ------------- | -------------------------------------- | ---- |
+| Least Squares | [C++](MachineLearning/LeastSquares.py) |      |
 
 ## Number Theory 
-- [Bernoulli Numbers](NumberTheory/BernoulliNumbers.cpp)
-- [Binomial Coefficient](NumberTheory/BinomialCoefficient.cpp)
-- Chinese Remainder Theorem ([C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py))
-- [Divisors](NumberTheory/Divisors.cpp)
-- Extended Euclidean Algorithm ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py))
-- [Euler's Totient Function](NumberTheory/EulerTotientFunction.cpp)
-- GCD, LCM ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Rust](NumberTheory/GCD_LCM.rs))
-- Inverse Element ([C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py))
-- [Legendre's Formula](NumberTheory/LegendreFormula.cpp)
-- [Log Factorial (Stirling's Approximation)](NumberTheory/LogFactorial.cpp)
-- [ModInt](NumberTheory/ModInt.cpp)
-- [Modular Arithmetic](NumberTheory/ModularArithmetic.cpp)
-- [Number Theory](NumberTheory/NumberTheory.cpp)
-- [Polynomial](NumericalAnalysis/Polynomial.cpp)
-- [Primality Test](NumberTheory/PrimalityTest.cpp)
-- [Prime](NumberTheory/Prime.cpp)
-- [Prime Factorization](NumberTheory/PrimeFactorization.cpp)
-- [Quadratic Residue](NumberTheory/QuadraticResidue.cpp)
-- [Radix](NumberTheory/Radix.cpp)
-- [Sum Of Powers](NumberTheory/SumOfPowers.cpp)
+| Algorithm                                | Implementation                                                                                      | Note |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------- | ---- |
+| Bernoulli Numbers                        | [C++](NumberTheory/BernoulliNumbers.cpp)                                                            |      |
+| Binomial Coefficient                     | [C++](NumberTheory/BinomialCoefficient.cpp)                                                         |      |
+| - Chinese Remainder Theorem              | [C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py) |      |
+| Divisors                                 | [C++](NumberTheory/Divisors.cpp)                                                                    |      |
+| - Extended Euclidean Algorithm           | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py)                 |      |
+| Euler's Totient Function                 | [C++](NumberTheory/EulerTotientFunction.cpp)                                                        |      |
+| - GCD, LCM                               | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Rust](NumberTheory/GCD_LCM.rs)                        |      |
+| - Inverse Element                        | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py)                     |      |
+| Legendre's Formula                       | [C++](NumberTheory/LegendreFormula.cpp)                                                             |      |
+| Log Factorial (Stirling's Approximation) | [C++](NumberTheory/LogFactorial.cpp)                                                                |      |
+| ModInt                                   | [C++](NumberTheory/ModInt.cpp)                                                                      |      |
+| Modular Arithmetic                       | [C++](NumberTheory/ModularArithmetic.cpp)                                                           |      |
+| Number Theory                            | [C++](NumberTheory/NumberTheory.cpp)                                                                |      |
+| Polynomial                               | [C++](NumericalAnalysis/Polynomial.cpp)                                                             |      |
+| Primality Test                           | [C++](NumberTheory/PrimalityTest.cpp)                                                               |      |
+| Prime                                    | [C++](NumberTheory/Prime.cpp)                                                                       |      |
+| Prime Factorization                      | [C++](NumberTheory/PrimeFactorization.cpp)                                                          |      |
+| Quadratic Residue                        | [C++](NumberTheory/QuadraticResidue.cpp)                                                            |      |
+| Radix                                    | [C++](NumberTheory/Radix.cpp)                                                                       |      |
+| Sum Of Powers                            | [C++](NumberTheory/SumOfPowers.cpp)                                                                 |      |
 
 ## Numerical Analysis
-- [Bisection Method](NumericalAnalysis/BisectionMethod.cpp)
-- [Cubic Equation](NumericalAnalysis/CubicEquation.cpp)
-- [Lagrange Interpolation](NumericalAnalysis/LagrangeInterpolation.cpp)
-- [Numerical Analysis](NumericalAnalysis/NumericalAnalysis.cpp)
-- [Quadratic Equation](NumericalAnalysis/QuadraticEquation.cpp)
+| Algorithm              | Implementation                                     | Note |
+| ---------------------- | -------------------------------------------------- | ---- |
+| Bisection Method       | [C++](NumericalAnalysis/BisectionMethod.cpp)       |      |
+| Cubic Equation         | [C++](NumericalAnalysis/CubicEquation.cpp)         |      |
+| Lagrange Interpolation | [C++](NumericalAnalysis/LagrangeInterpolation.cpp) |      |
+| Numerical Analysis     | [C++](NumericalAnalysis/NumericalAnalysis.cpp)     |      |
+| Quadratic Equation     | [C++](NumericalAnalysis/QuadraticEquation.cpp)     |      |
 
 ## Quantum 
-- [Adder](Quantum/Adder.ipynb)
-- [Bell State](Quantum/BellState.ipynb)
-- [Bernstein–Vazirani Algorithm](Quantum/BernsteinVazirani.ipynb)
-- [Deutsch's Algorithm](Quantum/Deutsch.ipynb)
-- [Deutsch–Jozsa Algorithm](Quantum/DeutschJozsa.ipynb)
-- [Entanglement](Quantum/Entanglement.ipynb)
-- [GHZ State](Quantum/GHZState.ipynb)
-- [n-CNOT](Quantum/n-CNOT.ipynb)
-- [Oracle](Quantum/Oracle.ipynb)
-- [Plus State, Minus State](Quantum/PlusState_MinusState.ipynb)
-- [Simon's Algorithm](Quantum/Simon.ipynb)
+| Algorithm                    | Implementation                            | Note |
+| ---------------------------- | ----------------------------------------- | ---- |
+| Adder                        | [C++](Quantum/Adder.ipynb)                |      |
+| Bell State                   | [C++](Quantum/BellState.ipynb)            |      |
+| Bernstein–Vazirani Algorithm | [C++](Quantum/BernsteinVazirani.ipynb)    |      |
+| Deutsch's Algorithm          | [C++](Quantum/Deutsch.ipynb)              |      |
+| Deutsch–Jozsa Algorithm      | [C++](Quantum/DeutschJozsa.ipynb)         |      |
+| Entanglement                 | [C++](Quantum/Entanglement.ipynb)         |      |
+| GHZ State                    | [C++](Quantum/GHZState.ipynb)             |      |
+| n-CNOT                       | [C++](Quantum/n-CNOT.ipynb)               |      |
+| Oracle                       | [C++](Quantum/Oracle.ipynb)               |      |
+| Plus State, Minus State      | [C++](Quantum/PlusState_MinusState.ipynb) |      |
+| Simon's Algorithm            | [C++](Quantum/Simon.ipynb)                |      |
 
 ## Signal Processing
-- [Fast Fourier Transform](SignalProcessing/FastFourierTransform.cpp)
+| Algorithm              | Implementation                                   | Note |
+| ---------------------- | ------------------------------------------------ | ---- |
+| Fast Fourier Transform | [C++](SignalProcessing/FastFourierTransform.cpp) |      |
 
 ## Sort
-- [Bubble Sort](Sort/BubbleSort.cpp)
-- [Counting Sort](Sort/CountingSort.cpp)
-- [Insertion Sort](Sort/InsertionSort.cpp)
-- [Inversion Number](Sort/InversionNumber.cpp)
-- [Merge Sort](Sort/MergeSort.cpp)
-- [Minimum Cost Sort](Sort/MinimumCostSort.cpp)
-- [Minimum Numbers Of Swaps](Sort/MinimumNumbersOfSwap.cpp)
-- [Quick Sort](Sort/QuickSort.cpp)
-- [Sort](Sort/Sort.cpp)
+| Algorithm                | Implementation                       | Note |
+| ------------------------ | ------------------------------------ | ---- |
+| Bubble Sort              | [C++](Sort/BubbleSort.cpp)           |      |
+| Counting Sort            | [C++](Sort/CountingSort.cpp)         |      |
+| Insertion Sort           | [C++](Sort/InsertionSort.cpp)        |      |
+| Inversion Number         | [C++](Sort/InversionNumber.cpp)      |      |
+| Merge Sort               | [C++](Sort/MergeSort.cpp)            |      |
+| Minimum Cost Sort        | [C++](Sort/MinimumCostSort.cpp)      |      |
+| Minimum Numbers Of Swaps | [C++](Sort/MinimumNumbersOfSwap.cpp) |      |
+| Quick Sort               | [C++](Sort/QuickSort.cpp)            |      |
+| Sort                     | [C++](Sort/Sort.cpp)                 |      |
 
 ## String 
-- Distance ([C++](String/Distance.cpp), [Python3](String/Distance.py))
-- [Fill](String/Fill.cpp)
-- [Manacher's Algorithm](String/Manacher.cpp)
-- [Morris–Pratt Algorithm](String/MorrisPratt.cpp)
-- [Parser](String/Parser.cpp)
-- [Replace](String/Replace.cpp)
-- [Rolling Hash](String/RollingHash.cpp)
-- [Split, Join](String/Split_Join.cpp)
-- [Suffix Array](String/SuffixArray.cpp)
-- [Z Algorithm](String/ZAlgorithm.cpp)
+| Algorithm              | Implementation                                            | Note |
+| ---------------------- | --------------------------------------------------------- | ---- |
+| Distance               | [C++](String/Distance.cpp), [Python3](String/Distance.py) |      |
+| Fill                   | [C++](String/Fill.cpp)                                    |      |
+| Manacher's Algorithm   | [C++](String/Manacher.cpp)                                |      |
+| Morris–Pratt Algorithm | [C++](String/MorrisPratt.cpp)                             |      |
+| Parser                 | [C++](String/Parser.cpp)                                  |      |
+| Replace                | [C++](String/Replace.cpp)                                 |      |
+| Rolling Hash           | [C++](String/RollingHash.cpp)                             |      |
+| Split, Join            | [C++](String/Split_Join.cpp)                              |      |
+| Suffix Array           | [C++](String/SuffixArray.cpp)                             |      |
+| Z Algorithm            | [C++](String/ZAlgorithm.cpp)                              |      |
 
 ## Others
-- Binary Search ([C++](Others/BinarySearch.cpp), [Python3](Others/BinarySearch.py))
-- [Gray Code](Others/GrayCode.py)
-- [Interactive Problem](Others/InteractiveProblem.cpp)
-- [Normal Distribution](Others/NormalDistribution.js)
-- [Number To String](Others/NumberToString.py)
-- [Number To Words](Others/NumberToWords.py)
-- [Others](Others/Others.cpp)
-- [Pop Count](Others/PopCount.cpp)
-- [Sliding Windows](Others/SlidingWindows.cpp)
-- [String To Number](Others/StringToNumber.py)
-- [Sum](Others/Sum.cpp)
-- [Ternary Search](Others/TernarySearch.cpp)
+| Algorithm           | Implementation                                                    | Note |
+| ------------------- | ----------------------------------------------------------------- | ---- |
+| Binary Search       | [C++](Others/BinarySearch.cpp), [Python3](Others/BinarySearch.py) |      |
+| Gray Code           | [C++](Others/GrayCode.py)                                         |      |
+| Interactive Problem | [C++](Others/InteractiveProblem.cpp)                              |      |
+| Normal Distribution | [C++](Others/NormalDistribution.js)                               |      |
+| Number To String    | [C++](Others/NumberToString.py)                                   |      |
+| Number To Words     | [C++](Others/NumberToWords.py)                                    |      |
+| Others              | [C++](Others/Others.cpp)                                          |      |
+| Pop Count           | [C++](Others/PopCount.cpp)                                        |      |
+| Sliding Windows     | [C++](Others/SlidingWindows.cpp)                                  |      |
+| String To Number    | [C++](Others/StringToNumber.py)                                   |      |
+| Sum                 | [C++](Others/Sum.cpp)                                             |      |
+| Ternary Search      | [C++](Others/TernarySearch.cpp)                                   |      |
 
