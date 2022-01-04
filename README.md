@@ -26,11 +26,11 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 ## Data Structures 
 | Algorithm                   | Implementation                                                                           | Note |
 | --------------------------- | ---------------------------------------------------------------------------------------- | ---- |
-| Segment Tree                | [C++](DataStructures/SegmentTree)                                                        |      |
+| Segment Tree                |                                                                                          |      |
 | - Range Add Query           | [C++](DataStructures/SegmentTree/RangeAddQuery.cpp)                                      |      |
 | - Range Minimum Query       | [C++](DataStructures/SegmentTree/RangeMinimumQuery.cpp)                                  |      |
 | - Range Update Query        | [C++](DataStructures/SegmentTree/RangeUpdateQuery.cpp)                                   |      |
-| Square Root Decomposition   | [C++](DataStructures/SquareRootDecomposition)                                            |      |
+| Square Root Decomposition   |                                                                                          |      |
 | - Range Add Query           | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                          |      |
 | - Range Minimum Query       | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                          |      |
 | - Range Sum Query           | [C++](DataStructures/SquareRootDecomposition/RangeSumQuery.cpp)                          |      |
@@ -70,12 +70,12 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 ## Graph Theory 
 | Algorithm                              | Implementation                                                     | Note |
 | -------------------------------------- | ------------------------------------------------------------------ | ---- |
-| Matching                               | [C++](GraphTheory/Matching)                                        |      |
+| Matching                               |                                                                    |      |
 | - Bipartite Matching                   | [C++](GraphTheory/Matching/BipartiteMatching.cpp)                  |      |
 | - Hopcroft–Karp Algorithm              | [C++](GraphTheory/Matching/HopcroftKarp.cpp)                       |      |
 | - Lexicographically Bipartite Matching | [C++](GraphTheory/Matching/LexicographicallyBipartiteMatching.cpp) |      |
 | - Stable Matching                      | [C++](GraphTheory/Matching/StableMatching.cpp)                     |      |
-| Shortest Path                          | [C++](GraphTheory/ShortestPath)                                    |      |
+| Shortest Path                          |                                                                    |      |
 | - 0-1 BFS                              | [C++](GraphTheory/ShortestPath/0-1BFS.cpp)                         |      |
 | - All Pairs Shortest Paths             | [C++](GraphTheory/ShortestPath/AllPairsShortestPaths.cpp)          |      |
 | - BFS                                  | [C++](GraphTheory/ShortestPath/BFS.cpp)                            |      |
@@ -83,7 +83,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | - Build DAG                            | [C++](GraphTheory/ShortestPath/BuilldDAG.cpp)                      |      |
 | - Dijkstra's Algorithm                 | [C++](GraphTheory/ShortestPath/Dijkstra.cpp)                       |      |
 | - Get Path                             | [C++](GraphTheory/ShortestPath/GetPath.cpp)                        |      |
-| Tree                                   | [C++](GraphTheory/Tree)                                            |      |
+| Tree                                   |                                                                    |      |
 | - Lowest Common Ancestors              | [C++](GraphTheory/Tree/LowestCommonAncestors.cpp)                  |      |
 | - Tree                                 | [C++](GraphTheory/Tree/Tree.cpp)                                   |      |
 | All Pairs Widest Paths                 | [C++](GraphTheory/AllPairsWidestPaths.cpp)                         |      |
