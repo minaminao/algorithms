@@ -17,6 +17,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 
 ## Cryptography 
 - *These implementations are not secure.*
+
 | Algorithm | Implementation                    | Note |
 | --------- | --------------------------------- | ---- |
 | ElGamal   | [C++](Cryptography/ElGamal.ipynb) |      |
