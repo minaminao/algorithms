@@ -2,7 +2,7 @@
 Implementations of algorithms and data structures, code snippets, etc. These algorithms and data structures can be used for everyday programming and competitive programming.
 The implementation of the algorithms in Rust language has been moved to [minaminao/algo-rs](https://github.com/minaminao/algo-rs).
 
-If you getting the message "Sorry, something went wrong. Reload?" when viewing a Jupyter notebook, try to see [nbviewer|[C++](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/)||.
+If you getting the message "Sorry, something went wrong. Reload?" when viewing a Jupyter notebook, try to see [nbviewer](https://nbviewer.jupyter.org/github/minaminao/algorithms/tree/master/).
 
 ## Combinatorics
 | Algorithm                     | Implementation                                       | Note |
