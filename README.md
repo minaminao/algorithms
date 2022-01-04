@@ -16,7 +16,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | Stirling Numbers              | [C++](Combinatorics/StirlingNumbers.cpp)             |      |
 
 ## Cryptography 
-- *These implementations are not secure.*
+*These implementations are not secure.*
 
 | Algorithm | Implementation                    | Note |
 | --------- | --------------------------------- | ---- |
@@ -39,13 +39,13 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | - RSQ and RAQ               | [C++](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)                              |      |
 | - Square Root Decomposition | [C++](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)                |      |
 | Binary Heap                 | [C++](DataStructures/BinaryHeap.cpp)                                                     |      |
-| - Binary Indexed Tree       | [C++](DataStructures/BinaryIndexedTree.cpp), [Rust](DataStructures/BinaryIndexedTree.rs) |      |
+| Binary Indexed Tree         | [C++](DataStructures/BinaryIndexedTree.cpp), [Rust](DataStructures/BinaryIndexedTree.rs) |      |
 | Compression                 | [C++](DataStructures/Compression.cpp)                                                    |      |
 | k-d Tree                    | [C++](DataStructures/KdTree.cpp)                                                         |      |
 | Leftist Heap                | [C++](DataStructures/LeftistHeap.cpp)                                                    |      |
 | Sparse Table                | [C++](DataStructures/SparseTable.cpp)                                                    |      |
 | Treap                       | [C++](DataStructures/Treap.cpp)                                                          |      |
-| - Union–Find                | [C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs)                 |      |
+| Union–Find                  | [C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs)                 |      |
 
 ## Dynamic Optimization
 | Algorithm                      | Implementation                                              | Note |
@@ -124,12 +124,12 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------- | ---- |
 | Bernoulli Numbers                        | [C++](NumberTheory/BernoulliNumbers.cpp)                                                            |      |
 | Binomial Coefficient                     | [C++](NumberTheory/BinomialCoefficient.cpp)                                                         |      |
-| - Chinese Remainder Theorem              | [C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py) |      |
+| Chinese Remainder Theorem                | [C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py) |      |
 | Divisors                                 | [C++](NumberTheory/Divisors.cpp)                                                                    |      |
-| - Extended Euclidean Algorithm           | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py)                 |      |
+| Extended Euclidean Algorithm             | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py)                 |      |
 | Euler's Totient Function                 | [C++](NumberTheory/EulerTotientFunction.cpp)                                                        |      |
-| - GCD, LCM                               | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Rust](NumberTheory/GCD_LCM.rs)                        |      |
-| - Inverse Element                        | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py)                     |      |
+| GCD, LCM                                 | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Rust](NumberTheory/GCD_LCM.rs)                        |      |
+| Inverse Element                          | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py)                     |      |
 | Legendre's Formula                       | [C++](NumberTheory/LegendreFormula.cpp)                                                             |      |
 | Log Factorial (Stirling's Approximation) | [C++](NumberTheory/LogFactorial.cpp)                                                                |      |
 | ModInt                                   | [C++](NumberTheory/ModInt.cpp)                                                                      |      |
