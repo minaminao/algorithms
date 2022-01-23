@@ -128,7 +128,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | Divisors                                 | [C++](NumberTheory/Divisors.cpp)                                                                    |      |
 | Extended Euclidean Algorithm             | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py)                 |      |
 | Euler's Totient Function                 | [C++](NumberTheory/EulerTotientFunction.cpp)                                                        |      |
-| GCD, LCM                                 | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Rust](NumberTheory/GCD_LCM.rs)                        |      |
+| GCD, LCM                                 | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Go](NumberTheory/GCD_LCM.go), [Rust](NumberTheory/GCD_LCM.rs)                        |      |
 | Inverse Element                          | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py)                     |      |
 | Legendre's Formula                       | [C++](NumberTheory/LegendreFormula.cpp)                                                             |      |
 | Log Factorial (Stirling's Approximation) | [C++](NumberTheory/LogFactorial.cpp)                                                                |      |
