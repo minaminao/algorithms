@@ -24,28 +24,28 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | RSA       | [C++](Cryptography/RSA.ipynb)     |      |
 
 ## Data Structures 
-| Algorithm                   | Implementation                                                                                                   | Note |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---- |
-| Segment Tree                |                                                                                                                  |      |
-| - Range Add Query           | [C++](DataStructures/SegmentTree/RangeAddQuery.cpp)                                                              |      |
-| - Range Minimum Query       | [C++](DataStructures/SegmentTree/RangeMinimumQuery.cpp)                                                          |      |
-| - Range Update Query        | [C++](DataStructures/SegmentTree/RangeUpdateQuery.cpp)                                                           |      |
-| Square Root Decomposition   |                                                                                                                  |      |
-| - Range Add Query           | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                                                  |      |
-| - Range Minimum Query       | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                                                  |      |
-| - Range Sum Query           | [C++](DataStructures/SquareRootDecomposition/RangeSumQuery.cpp)                                                  |      |
-| - Range Update Query        | [C++](DataStructures/SquareRootDecomposition/RangeUpdateQuery.cpp)                                               |      |
-| - RMQ and RUQ               | [C++](DataStructures/SquareRootDecomposition/RMQandRUQ.cpp)                                                      |      |
-| - RSQ and RAQ               | [C++](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)                                                      |      |
-| - Square Root Decomposition | [C++](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)                                        |      |
-| Binary Heap                 | [C++](DataStructures/BinaryHeap.cpp)                                                                             |      |
-| Binary Indexed Tree         | [C++](DataStructures/BinaryIndexedTree.cpp), [Rust](DataStructures/BinaryIndexedTree.rs)                         |      |
-| Compression                 | [C++](DataStructures/Compression.cpp)                                                                            |      |
-| k-d Tree                    | [C++](DataStructures/KdTree.cpp)                                                                                 |      |
-| Leftist Heap                | [C++](DataStructures/LeftistHeap.cpp)                                                                            |      |
-| Sparse Table                | [C++](DataStructures/SparseTable.cpp)                                                                            |      |
-| Treap                       | [C++](DataStructures/Treap.cpp)                                                                                  |      |
-| Union–Find                  | [C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs), [Python3](DataStructures/UnionFind.py) |      |
+| Algorithm                   | Implementation                                                                                                  | Note |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------- | ---- |
+| Segment Tree                |                                                                                                                 |      |
+| - Range Add Query           | [C++](DataStructures/SegmentTree/RangeAddQuery.cpp)                                                             |      |
+| - Range Minimum Query       | [C++](DataStructures/SegmentTree/RangeMinimumQuery.cpp)                                                         |      |
+| - Range Update Query        | [C++](DataStructures/SegmentTree/RangeUpdateQuery.cpp)                                                          |      |
+| Square Root Decomposition   |                                                                                                                 |      |
+| - Range Add Query           | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                                                 |      |
+| - Range Minimum Query       | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                                                 |      |
+| - Range Sum Query           | [C++](DataStructures/SquareRootDecomposition/RangeSumQuery.cpp)                                                 |      |
+| - Range Update Query        | [C++](DataStructures/SquareRootDecomposition/RangeUpdateQuery.cpp)                                              |      |
+| - RMQ and RUQ               | [C++](DataStructures/SquareRootDecomposition/RMQandRUQ.cpp)                                                     |      |
+| - RSQ and RAQ               | [C++](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)                                                     |      |
+| - Square Root Decomposition | [C++](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)                                       |      |
+| Binary Heap                 | [C++](DataStructures/BinaryHeap.cpp)                                                                            |      |
+| Binary Indexed Tree         | [C++](DataStructures/BinaryIndexedTree.cpp), [Rust](DataStructures/BinaryIndexedTree.rs)                        |      |
+| Compression                 | [C++](DataStructures/Compression.cpp)                                                                           |      |
+| k-d Tree                    | [C++](DataStructures/KdTree.cpp)                                                                                |      |
+| Leftist Heap                | [C++](DataStructures/LeftistHeap.cpp)                                                                           |      |
+| Sparse Table                | [C++](DataStructures/SparseTable.cpp)                                                                           |      |
+| Treap                       | [C++](DataStructures/Treap.cpp)                                                                                 |      |
+| Union–Find                  | [C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs), [Python](DataStructures/UnionFind.py) |      |
 
 ## Dynamic Optimization
 | Algorithm                      | Implementation                                              | Note |
@@ -124,12 +124,12 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ---- |
 | Bernoulli Numbers                        | [C++](NumberTheory/BernoulliNumbers.cpp)                                                                    |      |
 | Binomial Coefficient                     | [C++](NumberTheory/BinomialCoefficient.cpp)                                                                 |      |
-| Chinese Remainder Theorem                | [C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py)         |      |
+| Chinese Remainder Theorem                | [C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python](NumberTheory/ChineseRemainderTheorem.py)          |      |
 | Divisors                                 | [C++](NumberTheory/Divisors.cpp)                                                                            |      |
-| Extended Euclidean Algorithm             | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py)                         |      |
+| Extended Euclidean Algorithm             | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python](NumberTheory/ExtendedGCD.py)                          |      |
 | Euler's Totient Function                 | [C++](NumberTheory/EulerTotientFunction.cpp)                                                                |      |
 | GCD, LCM                                 | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Go](NumberTheory/GCD_LCM.go), [Rust](NumberTheory/GCD_LCM.rs) |      |
-| Inverse Element                          | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py)                             |      |
+| Inverse Element                          | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python](NumberTheory/Inverse.py)                              |      |
 | Legendre's Formula                       | [C++](NumberTheory/LegendreFormula.cpp)                                                                     |      |
 | Log Factorial (Stirling's Approximation) | [C++](NumberTheory/LogFactorial.cpp)                                                                        |      |
 | ModInt                                   | [C++](NumberTheory/ModInt.cpp)                                                                              |      |
@@ -186,32 +186,32 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | Sort                     | [C++](Sort/Sort.cpp)                 |      |
 
 ## String 
-| Algorithm              | Implementation                                            | Note |
-| ---------------------- | --------------------------------------------------------- | ---- |
-| Distance               | [C++](String/Distance.cpp), [Python3](String/Distance.py) |      |
-| Fill                   | [C++](String/Fill.cpp)                                    |      |
-| Manacher's Algorithm   | [C++](String/Manacher.cpp)                                |      |
-| Morris–Pratt Algorithm | [C++](String/MorrisPratt.cpp)                             |      |
-| Parser                 | [C++](String/Parser.cpp)                                  |      |
-| Replace                | [C++](String/Replace.cpp)                                 |      |
-| Rolling Hash           | [C++](String/RollingHash.cpp)                             |      |
-| Split, Join            | [C++](String/Split_Join.cpp)                              |      |
-| Suffix Array           | [C++](String/SuffixArray.cpp)                             |      |
-| Z Algorithm            | [C++](String/ZAlgorithm.cpp)                              |      |
+| Algorithm              | Implementation                                           | Note |
+| ---------------------- | -------------------------------------------------------- | ---- |
+| Distance               | [C++](String/Distance.cpp), [Python](String/Distance.py) |      |
+| Fill                   | [C++](String/Fill.cpp)                                   |      |
+| Manacher's Algorithm   | [C++](String/Manacher.cpp)                               |      |
+| Morris–Pratt Algorithm | [C++](String/MorrisPratt.cpp)                            |      |
+| Parser                 | [C++](String/Parser.cpp)                                 |      |
+| Replace                | [C++](String/Replace.cpp)                                |      |
+| Rolling Hash           | [C++](String/RollingHash.cpp)                            |      |
+| Split, Join            | [C++](String/Split_Join.cpp)                             |      |
+| Suffix Array           | [C++](String/SuffixArray.cpp)                            |      |
+| Z Algorithm            | [C++](String/ZAlgorithm.cpp)                             |      |
 
 ## Others
-| Algorithm           | Implementation                                                    | Note |
-| ------------------- | ----------------------------------------------------------------- | ---- |
-| Binary Search       | [C++](Others/BinarySearch.cpp), [Python3](Others/BinarySearch.py) |      |
-| Gray Code           | [C++](Others/GrayCode.py)                                         |      |
-| Interactive Problem | [C++](Others/InteractiveProblem.cpp)                              |      |
-| Normal Distribution | [C++](Others/NormalDistribution.js)                               |      |
-| Number To String    | [C++](Others/NumberToString.py)                                   |      |
-| Number To Words     | [C++](Others/NumberToWords.py)                                    |      |
-| Others              | [C++](Others/Others.cpp)                                          |      |
-| Pop Count           | [C++](Others/PopCount.cpp)                                        |      |
-| Sliding Windows     | [C++](Others/SlidingWindows.cpp)                                  |      |
-| String To Number    | [C++](Others/StringToNumber.py)                                   |      |
-| Sum                 | [C++](Others/Sum.cpp)                                             |      |
-| Ternary Search      | [C++](Others/TernarySearch.cpp)                                   |      |
+| Algorithm           | Implementation                                                   | Note |
+| ------------------- | ---------------------------------------------------------------- | ---- |
+| Binary Search       | [C++](Others/BinarySearch.cpp), [Python](Others/BinarySearch.py) |      |
+| Gray Code           | [C++](Others/GrayCode.py)                                        |      |
+| Interactive Problem | [C++](Others/InteractiveProblem.cpp)                             |      |
+| Normal Distribution | [C++](Others/NormalDistribution.js)                              |      |
+| Number To String    | [C++](Others/NumberToString.py)                                  |      |
+| Number To Words     | [C++](Others/NumberToWords.py)                                   |      |
+| Others              | [C++](Others/Others.cpp)                                         |      |
+| Pop Count           | [C++](Others/PopCount.cpp)                                       |      |
+| Sliding Windows     | [C++](Others/SlidingWindows.cpp)                                 |      |
+| String To Number    | [C++](Others/StringToNumber.py)                                  |      |
+| Sum                 | [C++](Others/Sum.cpp)                                            |      |
+| Ternary Search      | [C++](Others/TernarySearch.cpp)                                  |      |
 
