@@ -55,7 +55,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | Game Theory                    | [C++](DynamicOptimization/GameTheory.cpp)                   |      |
 | Largest Rectangle              | [C++](DynamicOptimization/LargestRectangle.cpp)             |      |
 | Largest Square                 | [C++](DynamicOptimization/LargestSquare.cpp)                |      |
-| Longest Increasing Subsequance | [C++](DynamicOptimization/LongestIncreasingSubsequence.cpp) |      |
+| Longest Increasing Subsequence | [C++](DynamicOptimization/LongestIncreasingSubsequence.cpp) |      |
 | Matrix Chain Multiplication    | [C++](DynamicOptimization/MatrixChainMultiplication.cpp)    |      |
 | Traveling Salesman Problem     | [C++](DynamicOptimization/TravelingSalesmanProblem.cpp)     |      |
 
