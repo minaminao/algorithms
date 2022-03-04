@@ -24,28 +24,28 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | RSA       | [C++](Cryptography/RSA.ipynb)     |      |
 
 ## Data Structures 
-| Algorithm                   | Implementation                                                                           | Note |
-| --------------------------- | ---------------------------------------------------------------------------------------- | ---- |
-| Segment Tree                |                                                                                          |      |
-| - Range Add Query           | [C++](DataStructures/SegmentTree/RangeAddQuery.cpp)                                      |      |
-| - Range Minimum Query       | [C++](DataStructures/SegmentTree/RangeMinimumQuery.cpp)                                  |      |
-| - Range Update Query        | [C++](DataStructures/SegmentTree/RangeUpdateQuery.cpp)                                   |      |
-| Square Root Decomposition   |                                                                                          |      |
-| - Range Add Query           | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                          |      |
-| - Range Minimum Query       | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                          |      |
-| - Range Sum Query           | [C++](DataStructures/SquareRootDecomposition/RangeSumQuery.cpp)                          |      |
-| - Range Update Query        | [C++](DataStructures/SquareRootDecomposition/RangeUpdateQuery.cpp)                       |      |
-| - RMQ and RUQ               | [C++](DataStructures/SquareRootDecomposition/RMQandRUQ.cpp)                              |      |
-| - RSQ and RAQ               | [C++](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)                              |      |
-| - Square Root Decomposition | [C++](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)                |      |
-| Binary Heap                 | [C++](DataStructures/BinaryHeap.cpp)                                                     |      |
-| Binary Indexed Tree         | [C++](DataStructures/BinaryIndexedTree.cpp), [Rust](DataStructures/BinaryIndexedTree.rs) |      |
-| Compression                 | [C++](DataStructures/Compression.cpp)                                                    |      |
-| k-d Tree                    | [C++](DataStructures/KdTree.cpp)                                                         |      |
-| Leftist Heap                | [C++](DataStructures/LeftistHeap.cpp)                                                    |      |
-| Sparse Table                | [C++](DataStructures/SparseTable.cpp)                                                    |      |
-| Treap                       | [C++](DataStructures/Treap.cpp)                                                          |      |
-| Union–Find                  | [C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs)                 |      |
+| Algorithm                   | Implementation                                                                                                   | Note |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---- |
+| Segment Tree                |                                                                                                                  |      |
+| - Range Add Query           | [C++](DataStructures/SegmentTree/RangeAddQuery.cpp)                                                              |      |
+| - Range Minimum Query       | [C++](DataStructures/SegmentTree/RangeMinimumQuery.cpp)                                                          |      |
+| - Range Update Query        | [C++](DataStructures/SegmentTree/RangeUpdateQuery.cpp)                                                           |      |
+| Square Root Decomposition   |                                                                                                                  |      |
+| - Range Add Query           | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                                                  |      |
+| - Range Minimum Query       | [C++](DataStructures/SquareRootDecomposition/RangeAddQuery.cpp)                                                  |      |
+| - Range Sum Query           | [C++](DataStructures/SquareRootDecomposition/RangeSumQuery.cpp)                                                  |      |
+| - Range Update Query        | [C++](DataStructures/SquareRootDecomposition/RangeUpdateQuery.cpp)                                               |      |
+| - RMQ and RUQ               | [C++](DataStructures/SquareRootDecomposition/RMQandRUQ.cpp)                                                      |      |
+| - RSQ and RAQ               | [C++](DataStructures/SquareRootDecomposition/RSQandRAQ.cpp)                                                      |      |
+| - Square Root Decomposition | [C++](DataStructures/SquareRootDecomposition/SquareRootDecomposition.cpp)                                        |      |
+| Binary Heap                 | [C++](DataStructures/BinaryHeap.cpp)                                                                             |      |
+| Binary Indexed Tree         | [C++](DataStructures/BinaryIndexedTree.cpp), [Rust](DataStructures/BinaryIndexedTree.rs)                         |      |
+| Compression                 | [C++](DataStructures/Compression.cpp)                                                                            |      |
+| k-d Tree                    | [C++](DataStructures/KdTree.cpp)                                                                                 |      |
+| Leftist Heap                | [C++](DataStructures/LeftistHeap.cpp)                                                                            |      |
+| Sparse Table                | [C++](DataStructures/SparseTable.cpp)                                                                            |      |
+| Treap                       | [C++](DataStructures/Treap.cpp)                                                                                  |      |
+| Union–Find                  | [C++](DataStructures/UnionFind.cpp), [Rust](DataStructures/UnionFind.rs), [Python3](DataStructures/UnionFind.py) |      |
 
 ## Dynamic Optimization
 | Algorithm                      | Implementation                                              | Note |
@@ -120,28 +120,28 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | Least Squares | [C++](MachineLearning/LeastSquares.py) |      |
 
 ## Number Theory 
-| Algorithm                                | Implementation                                                                                      | Note |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------- | ---- |
-| Bernoulli Numbers                        | [C++](NumberTheory/BernoulliNumbers.cpp)                                                            |      |
-| Binomial Coefficient                     | [C++](NumberTheory/BinomialCoefficient.cpp)                                                         |      |
-| Chinese Remainder Theorem                | [C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py) |      |
-| Divisors                                 | [C++](NumberTheory/Divisors.cpp)                                                                    |      |
-| Extended Euclidean Algorithm             | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py)                 |      |
-| Euler's Totient Function                 | [C++](NumberTheory/EulerTotientFunction.cpp)                                                        |      |
-| GCD, LCM                                 | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Go](NumberTheory/GCD_LCM.go), [Rust](NumberTheory/GCD_LCM.rs)                        |      |
-| Inverse Element                          | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py)                     |      |
-| Legendre's Formula                       | [C++](NumberTheory/LegendreFormula.cpp)                                                             |      |
-| Log Factorial (Stirling's Approximation) | [C++](NumberTheory/LogFactorial.cpp)                                                                |      |
-| ModInt                                   | [C++](NumberTheory/ModInt.cpp)                                                                      |      |
-| Modular Arithmetic                       | [C++](NumberTheory/ModularArithmetic.cpp)                                                           |      |
-| Number Theory                            | [C++](NumberTheory/NumberTheory.cpp)                                                                |      |
-| Polynomial                               | [C++](NumericalAnalysis/Polynomial.cpp)                                                             |      |
-| Primality Test                           | [C++](NumberTheory/PrimalityTest.cpp)                                                               |      |
-| Prime                                    | [C++](NumberTheory/Prime.cpp)                                                                       |      |
-| Prime Factorization                      | [C++](NumberTheory/PrimeFactorization.cpp)                                                          |      |
-| Quadratic Residue                        | [C++](NumberTheory/QuadraticResidue.cpp)                                                            |      |
-| Radix                                    | [C++](NumberTheory/Radix.cpp)                                                                       |      |
-| Sum Of Powers                            | [C++](NumberTheory/SumOfPowers.cpp)                                                                 |      |
+| Algorithm                                | Implementation                                                                                              | Note |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ---- |
+| Bernoulli Numbers                        | [C++](NumberTheory/BernoulliNumbers.cpp)                                                                    |      |
+| Binomial Coefficient                     | [C++](NumberTheory/BinomialCoefficient.cpp)                                                                 |      |
+| Chinese Remainder Theorem                | [C++](NumberTheory/ChineseRemainderTheorem.cpp), [Python3](NumberTheory/ChineseRemainderTheorem.py)         |      |
+| Divisors                                 | [C++](NumberTheory/Divisors.cpp)                                                                            |      |
+| Extended Euclidean Algorithm             | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/ExtendedGCD.py)                         |      |
+| Euler's Totient Function                 | [C++](NumberTheory/EulerTotientFunction.cpp)                                                                |      |
+| GCD, LCM                                 | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Go](NumberTheory/GCD_LCM.go), [Rust](NumberTheory/GCD_LCM.rs) |      |
+| Inverse Element                          | [C++](NumberTheory/ExtendedGCD_Inverse.cpp), [Python3](NumberTheory/Inverse.py)                             |      |
+| Legendre's Formula                       | [C++](NumberTheory/LegendreFormula.cpp)                                                                     |      |
+| Log Factorial (Stirling's Approximation) | [C++](NumberTheory/LogFactorial.cpp)                                                                        |      |
+| ModInt                                   | [C++](NumberTheory/ModInt.cpp)                                                                              |      |
+| Modular Arithmetic                       | [C++](NumberTheory/ModularArithmetic.cpp)                                                                   |      |
+| Number Theory                            | [C++](NumberTheory/NumberTheory.cpp)                                                                        |      |
+| Polynomial                               | [C++](NumericalAnalysis/Polynomial.cpp)                                                                     |      |
+| Primality Test                           | [C++](NumberTheory/PrimalityTest.cpp)                                                                       |      |
+| Prime                                    | [C++](NumberTheory/Prime.cpp)                                                                               |      |
+| Prime Factorization                      | [C++](NumberTheory/PrimeFactorization.cpp)                                                                  |      |
+| Quadratic Residue                        | [C++](NumberTheory/QuadraticResidue.cpp)                                                                    |      |
+| Radix                                    | [C++](NumberTheory/Radix.cpp)                                                                               |      |
+| Sum Of Powers                            | [C++](NumberTheory/SumOfPowers.cpp)                                                                         |      |
 
 ## Numerical Analysis
 | Algorithm              | Implementation                                     | Note |
