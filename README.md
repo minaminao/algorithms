@@ -135,7 +135,7 @@ If you getting the message "Sorry, something went wrong. Reload?" when viewing a
 | ModInt                                   | [C++](NumberTheory/ModInt.cpp)                                                                              |      |
 | Modular Arithmetic                       | [C++](NumberTheory/ModularArithmetic.cpp)                                                                   |      |
 | Number Theory                            | [C++](NumberTheory/NumberTheory.cpp)                                                                        |      |
-| Polynomial                               | [C++](NumericalAnalysis/Polynomial.cpp)                                                                     |      |
+| Polynomial                               | [C++](NumberTheory/Polynomial.cpp)                                                                          |      |
 | Primality Test                           | [C++](NumberTheory/PrimalityTest.cpp)                                                                       |      |
 | Prime                                    | [C++](NumberTheory/Prime.cpp)                                                                               |      |
 | Prime Factorization                      | [C++](NumberTheory/PrimeFactorization.cpp)                                                                  |      |
